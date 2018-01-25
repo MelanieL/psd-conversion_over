@@ -399,7 +399,13 @@ template {
 .wrapper {
   width: 1172px; }
 
+ul {
+  list-style: none; }
+
 body {
   color: #292935;
   font-size: 16px;
   font-family: "Poppins", sans-serif; }
+
+.italic {
+  font-style: italic; }
