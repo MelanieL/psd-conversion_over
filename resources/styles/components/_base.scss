@@ -1,0 +1,27 @@
+//Make the partial
+//Save the partial
+//Delete the partial
+//Import the partial
+//Save style.scss
+
+// Font variables
+$font-stack: 'Poppins', sans-serif;
+
+//Colour variables
+$primary: #292935;
+$secondary: #96969D;
+$tertiary: #ffffff;
+$quaternary: #79DAD6;
+$quinary: #FF9A9E;
+$senary: #F6B895;
+
+//Base styles
+*   {
+    outline: 1px solid red;
+}
+
+.wrapper    {
+    width: 1172px;  
+}
+
+
