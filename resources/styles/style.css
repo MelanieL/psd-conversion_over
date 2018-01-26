@@ -397,6 +397,9 @@ template {
   outline: 1px solid red; }
 
 .wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   width: 1172px; }
 
 ul {
@@ -407,5 +410,14 @@ body {
   font-size: 16px;
   font-family: "Poppins", sans-serif; }
 
+a {
+  text-decoration: none; }
+
 .italic {
   font-style: italic; }
+
+.bold {
+  font-weight: bold; }
+
+.font__pressstyle {
+  /* Will need to download link the font for this */ }
