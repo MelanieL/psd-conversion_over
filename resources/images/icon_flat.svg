@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg"
+	xmlns:xlink="http://www.w3.org/1999/xlink"
+	width="35px" height="24px" viewBox="0 0 35 24">
+<style type="text/css"><![CDATA[
+.style0 {
+  font-size: 2px;
+  font-family: "OpenSans";
+  fill: rgb(255,255,255);
+}
+]]></style>
+<g transform="matrix(0.65 0.00 0.00 0.63 0.00 0.00)"><g><rect x="0" y="0" width="54" height="38" rx="3" fill="rgb(181,181,181)"/><text transform="matrix(2.00,0.00,0.00,2.00,6.80,17.70)" class="style0"><tspan x="0.00 1.03 2.05 3.08 4.10 4.53 5.55 6.58 7.61 8.63 9.06 10.08 11.11 12.13 13.16 13.58 14.61 15.64 16.66" fill="rgb(255,255,255)">4111 1024 4435 5555</tspan></text><text transform="matrix(2.00,0.00,0.00,2.00,5.80,27.70)" class="style0"><tspan x="0.00 1.03 2.05 3.08 4.10 5.38 6.40 7.43 8.11 9.14 10.17" fill="rgb(255,255,255)">2013   01/15</tspan><tspan y="2.40" x="0.00 0.48 1.70 3.02 3.44 4.43 4.91 5.85 6.93 7.92" fill="rgb(255,255,255)">IAN SILBER</tspan></text></g></g></svg>
