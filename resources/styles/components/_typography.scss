@@ -7,32 +7,43 @@ body    {
     color: $primary;
     font-size: 16px;
     font-family: $font-stack;
+    line-height:1.5;
 }
 
 h1  {
     font-size: 60px;
     text-align: center;
+    font-weight: $bold-weight-bold;
 }
 
 h2  {
     font-size: 32px;
     text-align: center;
+    font-weight: $bold-weight-bold;
 }
 
 h3  {
     font-size: 24px;
+    font-weight: $bold-weight-bold;
 }
 
 h4  {
     font-size: 18px;
+    font-weight: $bold-weight-bold;
 }
 
 h5  {
     font-size: 16px;
+    font-weight: $bold-weight-bold;
 }
 
 a   {
+    color: $primary;
     text-decoration: none;
+}
+
+p   {
+    font-size: 14px;
 }
 
 .italic {
@@ -53,5 +64,21 @@ header a    {
 }
 
 header a:hover  {
+    color: $secondary;
+}
+
+.welcome h4 {
+    color: $quaternary;
+}
+
+.welcome p:first-of-type  {
+    color: $secondary;
+}
+
+.welcome__author span:first-of-type {
+    font-size: 16px;
+}
+
+.welcome__author span:last-of-type   {
     color: $secondary;
 }

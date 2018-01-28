@@ -4,8 +4,14 @@
 @import "components/header";
 @import "components/footer";
 
+// This is where the header styling begins
+
 header, .header__leftnav, .header__rightnav, .hero {
     display: flex;
+}
+
+header, .hero, .welcome {
+    width: 100%;
 }
 
 header  {
@@ -15,7 +21,7 @@ header  {
     justify-content: center;
     min-height: 100px;
     position: fixed;
-    width: 100%;
+    z-index: 60;
 }
 
 header ul   {
@@ -53,6 +59,8 @@ header .fa     {
     margin: 0px 15px;
 }
 
+// This is where the hero styling begins
+
 .hero   {
     background-size: cover;
     background-image: url(../images/hero.jpg);
@@ -61,7 +69,6 @@ header .fa     {
     height: calc( 100vh - 85px);
     justify-content: space-between;
     padding-top: 85px;
-    width: 100%;
 }
 
 .hero h1    {
@@ -100,4 +107,66 @@ header .fa     {
 
 .hero__navbutleftdiv, .hero__navbutrightdiv {
     padding: 20px;
+}
+
+// This is where the .welcome styling begins
+
+.welcome    {
+    min-height: 490px;
+}
+
+.welcome .wrapper   {
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+
+.welcome h4, 
+.welcome h2, 
+.welcome p    {
+    margin: 0;
+    text-align: center;
+    position: static;
+    z-index: 50;
+}
+
+.welcome h4 {
+    margin-top: 115px;
+}
+
+.welcome__plantimgdiv   {
+    position: absolute;
+    top: 120px;
+}
+
+.welcome__plantimgdiv img   {
+    z-index: 40;
+}
+
+.welcome h2 {
+    margin-top: 20px;
+}
+
+.welcome p:first-of-type    {
+    margin-top: 60px;
+}
+
+.welcome p  {
+    margin-top: 58px;
+    width: 770px;
+}
+
+
+
+
+/* Portrait tablet and small desktops */
+@media (max-width: 940px) {
+}
+
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
 }

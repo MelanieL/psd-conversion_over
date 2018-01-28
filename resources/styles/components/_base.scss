@@ -7,6 +7,9 @@
 // Font variables
 $font-stack: 'Poppins', sans-serif;
 
+// 
+$bold-weight-bold: 500;
+
 //Colour variables
 $primary: #292935;
 $secondary: #96969D;
@@ -26,6 +29,7 @@ body    {
 
 .wrapper    {
     display: flex;
+    margin: 0 auto;
     width: 1172px;  
 }
 

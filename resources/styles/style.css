@@ -403,6 +403,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  margin: 0 auto;
   width: 1172px; }
 
 ul {
@@ -415,27 +416,37 @@ ul {
 body {
   color: #292935;
   font-size: 16px;
-  font-family: "Poppins", sans-serif; }
+  font-family: "Poppins", sans-serif;
+  line-height: 1.5; }
 
 h1 {
   font-size: 60px;
-  text-align: center; }
+  text-align: center;
+  font-weight: 500; }
 
 h2 {
   font-size: 32px;
-  text-align: center; }
+  text-align: center;
+  font-weight: 500; }
 
 h3 {
-  font-size: 24px; }
+  font-size: 24px;
+  font-weight: 500; }
 
 h4 {
-  font-size: 18px; }
+  font-size: 18px;
+  font-weight: 500; }
 
 h5 {
-  font-size: 16px; }
+  font-size: 16px;
+  font-weight: 500; }
 
 a {
+  color: #292935;
   text-decoration: none; }
+
+p {
+  font-size: 14px; }
 
 .italic {
   font-style: italic; }
@@ -453,10 +464,25 @@ header a {
 header a:hover {
   color: #96969D; }
 
+.welcome h4 {
+  color: #79DAD6; }
+
+.welcome p:first-of-type {
+  color: #96969D; }
+
+.welcome__author span:first-of-type {
+  font-size: 16px; }
+
+.welcome__author span:last-of-type {
+  color: #96969D; }
+
 header, .header__leftnav, .header__rightnav, .hero {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
+
+header, .hero, .welcome {
+  width: 100%; }
 
 header {
   -webkit-box-align: center;
@@ -472,7 +498,7 @@ header {
   justify-content: center;
   min-height: 100px;
   position: fixed;
-  width: 100%; }
+  z-index: 60; }
 
 header ul {
   padding: 0; }
@@ -510,8 +536,7 @@ header .fa {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding-top: 85px;
-  width: 100%; }
+  padding-top: 85px; }
 
 .hero h1 {
   margin: 0; }
@@ -549,3 +574,48 @@ header .fa {
 
 .hero__navbutleftdiv, .hero__navbutrightdiv {
   padding: 20px; }
+
+.welcome {
+  min-height: 490px; }
+
+.welcome .wrapper {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  position: relative; }
+
+.welcome h4,
+.welcome h2,
+.welcome p {
+  margin: 0;
+  text-align: center;
+  position: static;
+  z-index: 50; }
+
+.welcome h4 {
+  margin-top: 115px; }
+
+.welcome__plantimgdiv {
+  position: absolute;
+  top: 120px; }
+
+.welcome__plantimgdiv img {
+  z-index: 40; }
+
+.welcome h2 {
+  margin-top: 20px; }
+
+.welcome p:first-of-type {
+  margin-top: 60px; }
+
+.welcome p {
+  margin-top: 58px;
+  width: 770px; }
+
+/* Portrait tablet and small desktops */
+/* Landscape phone to portrait tablet */
+/* Landscape phones and down */
