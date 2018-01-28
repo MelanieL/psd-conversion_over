@@ -20,6 +20,10 @@ $senary: #F6B895;
     outline: 1px solid red;
 }
 
+body    {
+    width: 100%;
+}
+
 .wrapper    {
     display: flex;
     width: 1172px;  
@@ -28,5 +32,4 @@ $senary: #F6B895;
 ul  {
     list-style: none;
 }
-
 

@@ -4,3 +4,100 @@
 @import "components/header";
 @import "components/footer";
 
+header, .header__leftnav, .header__rightnav, .hero {
+    display: flex;
+}
+
+header  {
+    align-items: center;
+    background: #ffffff;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 100px;
+    position: fixed;
+    width: 100%;
+}
+
+header ul   {
+    padding: 0;
+}
+
+.header__leftnav    {
+    margin-right: 100px;
+}
+
+.header__leftnav a   {
+    padding: 0px 20px;
+}
+
+.logoimgdiv {
+    margin-right: 232px;
+}
+
+.header__rightnav   {
+    margin-right: 100px;
+}
+
+.header__rightnav__bagicon  {
+    height: 25px;
+    margin: 0px 15px;
+    width: 25px;
+}
+
+.header__rightnav__bagicon:hover    {
+    fill: $secondary;
+}
+
+header .fa     {
+    font-size: 23px;
+    margin: 0px 15px;
+}
+
+.hero   {
+    background-size: cover;
+    background-image: url(../images/hero.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    height: calc( 100vh - 85px);
+    justify-content: space-between;
+    padding-top: 85px;
+    width: 100%;
+}
+
+.hero h1    {
+    margin: 0;
+}
+
+.hero h2    {
+    color: $secondary;
+    margin-top: 180px;
+}
+
+.hero__centercontent {
+	align-items: center;
+	display: flex;
+    flex-direction: column;
+}
+
+.hero__shopnowbut {
+    background: $quinary;
+	margin-top: 40px;
+	padding: 10px 30px;
+}
+
+.hero__shopnowbut a  {
+    color: $tertiary;
+    font-size: 16px;
+}
+
+.hero__navbutleftdiv    {
+    margin: 290px 0px 0px 30px;
+}
+
+.hero__navbutrightdiv   {
+    margin: 290px 30px 0px 0px;
+}
+
+.hero__navbutleftdiv, .hero__navbutrightdiv {
+    padding: 20px;
+}

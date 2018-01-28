@@ -396,6 +396,9 @@ template {
 * {
   outline: 1px solid red; }
 
+body {
+  width: 100%; }
+
 .wrapper {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -405,10 +408,31 @@ template {
 ul {
   list-style: none; }
 
+@font-face {
+  font-family: "PressStyle";
+  src: url(../fonts/PressStyle.woff) format("woff"); }
+
 body {
   color: #292935;
   font-size: 16px;
   font-family: "Poppins", sans-serif; }
+
+h1 {
+  font-size: 60px;
+  text-align: center; }
+
+h2 {
+  font-size: 32px;
+  text-align: center; }
+
+h3 {
+  font-size: 24px; }
+
+h4 {
+  font-size: 18px; }
+
+h5 {
+  font-size: 16px; }
 
 a {
   text-decoration: none; }
@@ -420,4 +444,108 @@ a {
   font-weight: bold; }
 
 .font__pressstyle {
-  /* Will need to download link the font for this */ }
+  font-family: "PressStyle"; }
+
+header a {
+  color: #292935;
+  font-size: 14px; }
+
+header a:hover {
+  color: #96969D; }
+
+header, .header__leftnav, .header__rightnav, .hero {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+header {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: #ffffff;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  min-height: 100px;
+  position: fixed;
+  width: 100%; }
+
+header ul {
+  padding: 0; }
+
+.header__leftnav {
+  margin-right: 100px; }
+
+.header__leftnav a {
+  padding: 0px 20px; }
+
+.logoimgdiv {
+  margin-right: 232px; }
+
+.header__rightnav {
+  margin-right: 100px; }
+
+.header__rightnav__bagicon {
+  height: 25px;
+  margin: 0px 15px;
+  width: 25px; }
+
+.header__rightnav__bagicon:hover {
+  fill: #96969D; }
+
+header .fa {
+  font-size: 23px;
+  margin: 0px 15px; }
+
+.hero {
+  background-size: cover;
+  background-image: url(../images/hero.jpg);
+  background-position: center center;
+  background-repeat: no-repeat;
+  height: calc( 100vh - 85px);
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 85px;
+  width: 100%; }
+
+.hero h1 {
+  margin: 0; }
+
+.hero h2 {
+  color: #96969D;
+  margin-top: 180px; }
+
+.hero__centercontent {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.hero__shopnowbut {
+  background: #FF9A9E;
+  margin-top: 40px;
+  padding: 10px 30px; }
+
+.hero__shopnowbut a {
+  color: #ffffff;
+  font-size: 16px; }
+
+.hero__navbutleftdiv {
+  margin: 290px 0px 0px 30px; }
+
+.hero__navbutrightdiv {
+  margin: 290px 30px 0px 0px; }
+
+.hero__navbutleftdiv, .hero__navbutrightdiv {
+  padding: 20px; }
