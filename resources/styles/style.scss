@@ -458,6 +458,46 @@ header .fa     {
     margin-top: 0;
 }
 
+// This is where styling begins for the blog section
+
+.blog .wrapper  {
+    align-items: center;
+    flex-direction: column;
+}
+
+.blog h2    {
+    margin: 60px 0px 0px 0px;
+}
+
+.blog__articlebox   {
+    width: 30%;
+}
+
+.blog img   {
+    height: 30vh;
+    width: 100%;
+}
+
+.blog__articlebox__articlecont  {
+    display: flex;
+    justify-content: space-between;
+}
+
+.blog__articlebox__imgdiv   {
+    height: 30vh;
+}
+
+.blog p  {
+    text-align: left;
+}
+
+.blog p:first-of-type   {
+    color: $secondary;
+}
+
+.blog a:hover   {
+    border-bottom: 1px solid $primary;
+}
 
 
 // This is where responsive styling starts

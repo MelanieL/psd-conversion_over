@@ -403,7 +403,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 82%; }
+  width: 80%; }
 
 ul {
   list-style: none; }
@@ -445,6 +445,7 @@ h5 {
 
 a {
   color: #292935;
+  font-size: 14px;
   text-decoration: none; }
 
 p {
@@ -462,8 +463,7 @@ p {
   font-family: "PressStyle"; }
 
 header a {
-  color: #292935;
-  font-size: 14px; }
+  color: #292935; }
 
 header a:hover {
   color: #96969D; }
@@ -905,6 +905,45 @@ header .fa {
   font-size: 16px;
   font-weight: 400;
   margin-top: 0; }
+
+.blog .wrapper {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.blog h2 {
+  margin: 60px 0px 0px 0px; }
+
+.blog__articlebox {
+  width: 30%; }
+
+.blog img {
+  height: 30vh;
+  width: 100%; }
+
+.blog__articlebox__articlecont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.blog__articlebox__imgdiv {
+  height: 30vh; }
+
+.blog p {
+  text-align: left; }
+
+.blog p:first-of-type {
+  color: #96969D; }
+
+.blog a:hover {
+  border-bottom: 1px solid #292935; }
 
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
