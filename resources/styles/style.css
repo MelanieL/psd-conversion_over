@@ -487,6 +487,10 @@ header a:hover {
 .popular__prodpricing p {
   font-weight: 400; }
 
+.signup form p {
+  color: #96969D;
+  font-size: 14px; }
+
 header,
 .header__leftnav,
 .header__rightnav,
@@ -918,6 +922,9 @@ header .fa {
 .blog h2 {
   margin: 60px 0px 0px 0px; }
 
+.blog .popular__titleunderlinesdiv {
+  padding-top: 25px; }
+
 .blog__articlebox {
   width: 30%; }
 
@@ -944,6 +951,60 @@ header .fa {
 
 .blog a:hover {
   border-bottom: 1px solid #292935; }
+
+.signup .wrapper {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column; }
+
+.signup h2 {
+  margin: 70px 0px 0px 0px; }
+
+.signup .popular__titleunderlinesdiv {
+  margin: 0;
+  padding-top: 25px; }
+
+.signup p {
+  width: 52%; }
+
+.signup__emailbox {
+  border-bottom: 1px solid #96969D;
+  width: 80%; }
+
+.signup form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.signup form p {
+  width: 23%; }
+
+.signup input {
+  border: none;
+  width: 70%; }
+
+.signup button {
+  background: none;
+  border: none;
+  padding: 0;
+  width: 7%; }
+
+.signup__locationimgscont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding-top: 40px;
+  width: 100%; }
+
+.signup__locationimgscont img {
+  width: 100%; }
 
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
