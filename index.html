@@ -130,40 +130,50 @@
     <section class="categories">
         <div class="wrapper">
             <div class="categories__airpltdiv">
-                <img src="resources/images/image_airplants.jpg">
+                <div class="categories__airpltimgdiv">
+                    <img src="resources/images/image_airplants.jpg" alt="image of a spiky plant">
+                </div>
                 <a href="">
-                    <div class="categories__label">
+                    <div class="categories__label__airplt">
                         <h3>Air Plants</h3>
                         <p>12 items</p>
                     </div>
                 </a>
             </div>
-            <div class="categories__offpltdiv">
-                <img src="resources/images/image_officeplants.jpg">
-                <a href="">
-                    <div class="categories__label">
-                        <h3>Office Plants</h3>
-                        <p>38 items</p>
+            <div class="categories__rightdivs">
+                <div class="categories__rightdivs__offpltdiv">
+                    <div class="categories__offpltimgdiv">
+                        <img src="resources/images/image_officeplants.jpg" alt="image of a hanging plant">
                     </div>
-                </a>
-            </div>
-            <div class="categories__houpltdiv">
-                <img src="resources/images/image_houseplants.jpg">
-                <a href="">
-                    <div class="categories__label">
-                        <h3>House Plants</h3>
-                        <p>21 items</p>
+                    <a href="">
+                        <div class="categories__label__offplt">
+                            <h3>Office Plants</h3>
+                            <p>38 items</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="categories__rightdivs__houpltdiv">
+                    <div class="categories__houpltimgdiv">
+                        <img src="resources/images/image_houseplants.jpg" alt="image of a terrarium plant">
                     </div>
-                </a>
-            </div>
-            <div class="categories__pltcontdiv">
-                <img src="resources/images/image_plantcontainers.jpg">
-                <a href="">
-                    <div class="categories__label">
-                        <h3>Plant Containers</h3>
-                        <p>07 items</p>
+                    <a href="">
+                        <div class="categories__label__houpl">
+                            <h3>House Plants</h3>
+                            <p>21 items</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="categories__rightdivs__pltcontdiv">
+                    <div class="categories__pltcontimgdiv">
+                        <img src="resources/images/image_plantcontainers.jpg" alt="image of a plant container with several plants">
                     </div>
-                </a>
+                    <a href="">
+                        <div class="categories__label__pltcont">
+                            <h3>Plant Containers</h3>
+                            <p>07 items</p>
+                        </div>
+                    </a>
+                </div>
             </div>
         </div>
     </section>
@@ -171,169 +181,171 @@
     <section class="popular" id="shop">
         <div class="wrapper">
             <h2>Popular Products</h2>
-            <ul class="popular__nav">
-                <li><a href="">New Arrivals</a></li>
-                <li><a href="">Best Seller</a></li>
-                <li><a href="">Features</a></li>
-            </ul>
-            <div class="popular__prodbox">
-                <div class="popular__prodimgdiv">
-                    <img src="resources/images/image_pop1.jpg">
+            <nav class="popular__nav">
+                <a href="">New Arrivals</a>
+                <a href="">Best Seller</a>
+                <a href="">Features</a>
+            </nav>
+            <div class="popular__prodboxcont">
+                <div class="popular__prodbox">
+                    <div class="popular__prodimgdiv">
+                        <img src="resources/images/image_pop1.jpg">
+                    </div>
+                    <div class="popular__prodpricing">
+                        <p class="popular__description">Pebbled backpack</p>
+                        <p class="popular__price">$99.00</p>
+                    </div>
+                    <div class="popular__prodimgdiv-hover">
+                        <a href="">
+                            <div class="popular__prodimgdiv-hover-link">
+                                <p>ADD TO CART</p>
+                            </div>
+                        </a>
+                    </div>
                 </div>
-                <div class="popular__prodimgdiv-hover">
-                    <a href="">
-                        <div class="popular__prodimgdiv-hover-link">
-                            <p>ADD TO CART</p>
-                        </div>
-                    </a>
+                <div class="popular__prodbox">
+                    <div class="popular__prodimgdiv">
+                        <img src="resources/images/image_pop2.jpg">
+                    </div>
+                    <div class="popular__prodimgdiv-hover">
+                        <a href="">
+                            <div class="popular__prodimgdiv-hover-link">
+                                <p>ADD TO CART</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popular__prodpricing">
+                        <p class="popular__description">Flower print dress</p>
+                        <p class="popular__price">$52.00</p>
+                    </div>
                 </div>
-                <div class="popular__prodpricing">
-                    <p class="popular__description"></p>
-                    <p class="popular__price"></p>
+                <div class="popular__prodbox">
+                    <div class="popular__prodimgdiv">
+                        <img src="resources/images/image_pop3.jpg">
+                    </div>
+                    <div class="popular__prodimgdiv-hover">
+                        <a href="">
+                            <div class="popular__prodimgdiv-hover-link">
+                                <p>ADD TO CART</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popular__prodpricing">
+                        <p class="popular__description">Printed cotton t-shirt</p>
+                        <p class="popular__price">$56.00 <span class="regprice">$79.00</span></p>
+                    </div>
                 </div>
-            </div>
-            <div class="popular__prodbox">
-                <div class="popular__prodimgdiv">
-                    <img src="resources/images/image_pop2.jpg">
+                <div class="popular__prodbox">
+                    <div class="popular__prodimgdiv">
+                        <img src="resources/images/image_pop4.jpg">
+                    </div>
+                    <div class="popular__prodimgdiv-hover">
+                        <a href="">
+                            <div class="popular__prodimgdiv-hover-link">
+                                <p>ADD TO CART</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popular__prodpricing">
+                        <p class="popular__description">Slim-fit cotton T-shirt</p>
+                        <p class="popular__price">$77.00</p>
+                    </div>
                 </div>
-                <div class="popular__prodimgdiv-hover">
-                    <a href="">
-                        <div class="popular__prodimgdiv-hover-link">
-                            <p>ADD TO CART</p>
-                        </div>
-                    </a>
+                <div class="popular__prodbox">
+                    <div class="popular__prodimgdiv">
+                        <img src="resources/images/image_pop5.jpg">
+                    </div>
+                    <div class="popular__prodimgdiv-hover">
+                        <a href="">
+                            <div class="popular__prodimgdiv-hover-link">
+                                <p>ADD TO CART</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popular__prodpricing">
+                        <p class="popular__description">Zip leather jacket</p>
+                        <p class="popular__price">$178.00<span class="regprice">$199.00</span></p>
+                    </div>
                 </div>
-                <div class="popular__prodpricing">
-                    <p class="popular__description"></p>
-                    <p class="popular__price"></p>
+                <div class="popular__prodbox">
+                    <div class="popular__prodimgdiv">
+                        <img src="resources/images/image_pop6.jpg">
+                    </div>
+                    <div class="popular__prodimgdiv-hover">
+                        <a href="">
+                            <div class="popular__prodimgdiv-hover-link">
+                                <p>ADD TO CART</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popular__prodpricing">
+                        <p class="popular__description">Flower print dress</p>
+                        <p class="popular__price">$98.00</p>
+                    </div>
                 </div>
-            </div>
-            <div class="popular__prodbox">
-                <div class="popular__prodimgdiv">
-                    <img src="resources/images/image_pop3.jpg">
+                <div class="popular__prodbox">
+                    <div class="popular__prodimgdiv">
+                        <img src="resources/images/image_pop7.jpg">
+                    </div>
+                    <div class="popular__prodimgdiv-hover">
+                        <a href="">
+                            <div class="popular__prodimgdiv-hover-link">
+                                <p>ADD TO CART</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popular__prodpricing">
+                        <p class="popular__description">Combined weekend bag</p>
+                        <p class="popular__price">$88.00</p>
+                    </div>
                 </div>
-                <div class="popular__prodimgdiv-hover">
-                    <a href="">
-                        <div class="popular__prodimgdiv-hover-link">
-                            <p>ADD TO CART</p>
-                        </div>
-                    </a>
+                <div class="popular__prodbox">
+                    <div class="popular__prodimgdiv">
+                        <img src="resources/images/image_pop8.jpg">
+                    </div>
+                    <div class="popular__prodimgdiv-hover">
+                        <a href="">
+                            <div class="popular__prodimgdiv-hover-link">
+                                <p>ADD TO CART</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popular__prodpricing">
+                        <p class="popular__description">Tortoiseshell retro sunglasses</p>
+                        <p class="popular__price">$56.00<span class"regprice">$79.00</span></p>
+                    </div>
                 </div>
-                <div class="popular__prodpricing">
-                    <p class="popular__description"></p>
-                    <p class="popular__price"></p>
+                <div class="popular__prodbox">
+                    <div class="popular__prodimgdiv">
+                        <img src="resources/images/image_pop9.jpg">
+                    </div>
+                    <div class="popular__prodimgdiv-hover">
+                        <a href="">
+                            <div class="popular__prodimgdiv-hover-link">
+                                <p>ADD TO CART</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popular__prodpricing">
+                        <p class="popular__description">Slim-fit Patrick jeans</p>
+                        <p class="popular__price">$88.00</p>
+                    </div>
                 </div>
-            </div>
-            <div class="popular__prodbox">
-                <div class="popular__prodimgdiv">
-                    <img src="resources/images/image_pop4.jpg">
-                </div>
-                <div class="popular__prodimgdiv-hover">
-                    <a href="">
-                        <div class="popular__prodimgdiv-hover-link">
-                            <p>ADD TO CART</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="popular__prodpricing">
-                    <p class="popular__description"></p>
-                    <p class="popular__price"></p>
-                </div>
-            </div>
-            <div class="popular__prodbox">
-                <div class="popular__prodimgdiv">
-                    <img src="resources/images/image_pop5.jpg">
-                </div>
-                <div class="popular__prodimgdiv-hover">
-                    <a href="">
-                        <div class="popular__prodimgdiv-hover-link">
-                            <p>ADD TO CART</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="popular__prodpricing">
-                    <p class="popular__description"></p>
-                    <p class="popular__price"></p>
-                </div>
-            </div>
-            <div class="popular__prodbox">
-                <div class="popular__prodimgdiv">
-                    <img src="resources/images/image_pop6.jpg">
-                </div>
-                <div class="popular__prodimgdiv-hover">
-                    <a href="">
-                        <div class="popular__prodimgdiv-hover-link">
-                            <p>ADD TO CART</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="popular__prodpricing">
-                    <p class="popular__description"></p>
-                    <p class="popular__price"></p>
-                </div>
-            </div>
-            <div class="popular__prodbox">
-                <div class="popular__prodimgdiv">
-                    <img src="resources/images/image_pop7.jpg">
-                </div>
-                <div class="popular__prodimgdiv-hover">
-                    <a href="">
-                        <div class="popular__prodimgdiv-hover-link">
-                            <p>ADD TO CART</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="popular__prodpricing">
-                    <p class="popular__description"></p>
-                    <p class="popular__price"></p>
-                </div>
-            </div>
-            <div class="popular__prodbox">
-                <div class="popular__prodimgdiv">
-                    <img src="resources/images/image_pop8.jpg">
-                </div>
-                <div class="popular__prodimgdiv-hover">
-                    <a href="">
-                        <div class="popular__prodimgdiv-hover-link">
-                            <p>ADD TO CART</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="popular__prodpricing">
-                    <p class="popular__description"></p>
-                    <p class="popular__price"></p>
-                </div>
-            </div>
-            <div class="popular__prodbox">
-                <div class="popular__prodimgdiv">
-                    <img src="resources/images/image_pop9.jpg">
-                </div>
-                <div class="popular__prodimgdiv-hover">
-                    <a href="">
-                        <div class="popular__prodimgdiv-hover-link">
-                            <p>ADD TO CART</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="popular__prodpricing">
-                    <p class="popular__description"></p>
-                    <p class="popular__price"></p>
-                </div>
-            </div>
-            <div class="popular__prodbox">
-                <div class="popular__prodimgdiv">
-                    <img src="resources/images/image_pop10.jpg">
-                </div>
-                <div class="popular__prodimgdiv-hover">
-                    <a href="">
-                        <div class="popular__prodimgdiv-hover-link">
-                            <p>ADD TO CART</p>
-                        </div>
-                    </a>
-                </div>
-                <div class="popular__prodpricing">
-                    <p class="popular__description"></p>
-                    <p class="popular__price"></p>
+                <div class="popular__prodbox">
+                    <div class="popular__prodimgdiv">
+                        <img src="resources/images/image_pop10.jpg">
+                    </div>
+                    <div class="popular__prodimgdiv-hover">
+                        <a href="">
+                            <div class="popular__prodimgdiv-hover-link">
+                                <p>ADD TO CART</p>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="popular__prodpricing">
+                        <p class="popular__description">Embroidered message cap</p>
+                        <p class="popular__price">$178.00<span class="regprice">$199.00</span></p>
+                    </div>
                 </div>
             </div>
         </div>

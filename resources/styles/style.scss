@@ -6,12 +6,39 @@
 
 // This is where the header styling begins
 
-header, .header__leftnav, .header__rightnav, .hero {
+header, 
+.header__leftnav, 
+.header__rightnav, 
+.hero,
+.welcome,
+.categories,
+.popular,
+.blog,
+.signup,
+.contact {
     display: flex;
 }
 
-header, .hero, .welcome {
+header, 
+.hero, 
+.welcome, 
+.categories, 
+.popular, 
+.quote, 
+.blog, 
+.signup, 
+.contact, 
+footer {
     width: 100%;
+}
+
+.welcome,
+.categories,
+.popular,
+.blog,
+.signup,
+.contact    {
+    justify-content: center;
 }
 
 header  {
@@ -89,7 +116,30 @@ header .fa     {
 .hero__shopnowbut {
     background: $quinary;
 	margin-top: 40px;
-	padding: 10px 30px;
+    padding: 10px 30px;
+    position: relative;
+}
+
+.hero__navindicatordiv   {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    margin-top: 25%;
+    min-height: 20px;
+    position: relative;
+    width: 90px
+}
+
+.hero__navcircle    {
+    background: $primary;
+    border-radius: 50px;
+    height: 12px;
+    margin: 0px 5px;
+    width: 12px;
+}
+
+.hero__navcircle:hover {
+    background: $secondary;
 }
 
 .hero__shopnowbut a  {
@@ -105,7 +155,8 @@ header .fa     {
     margin: 290px 30px 0px 0px;
 }
 
-.hero__navbutleftdiv, .hero__navbutrightdiv {
+.hero__navbutleftdiv, 
+.hero__navbutrightdiv {
     padding: 20px;
 }
 
@@ -156,8 +207,137 @@ header .fa     {
     width: 770px;
 }
 
+// This is where styling for the categories section begins
+
+.categories {
+    min-height: 575px;
+}
+
+.categories h3  {
+    margin: 10px 0;
+}
+
+.categories p   {
+    margin: 0;
+    padding: 0;
+}
+
+.categories__airpltdiv, 
+.categories__rightdivs__offpltdiv, 
+.categories__rightdivs__houpltdiv, 
+.categories__rightdivs__pltcontdiv
+  {
+    position: relative;
+    z-index: 40;
+}
+
+.categories__label__airplt,
+.categories__label__offplt,
+.categories__label__houpl,
+.categories__label__pltcont  {
+    background: $tertiary;
+    position: absolute;
+    z-index: 50;
+}
+
+.categories__airpltdiv  {
+    // margin-right: 10px;
+    width: 40%;
+}
+
+.categories__label__airplt   {
+    top: 43%;
+    right: 29%;
+    width: 40%;
+}
+
+.categories__label__offplt,
+.categories__label__houpl  {
+    top: 30%;
+    left: 25%;
+    width: 60%;
+}
+
+.categories__label__pltcont {
+    top: 30%;
+    left: 25%;
+    width: 60%;
+}
+
+.categories__rightdivs  {
+    display: flex;
+    flex-wrap: wrap;
+    width: 60%;
+}
+
+.categories__offpltimgdiv,
+.categories__houpltimgdiv,
+.categories__pltcontimgdiv  {
+    // margin-left: 10px;
+}
+
+.categories__rightdivs__offpltdiv,
+.categories__rightdivs__houpltdiv  {
+    width: 50%;
+}
+
+.categories__rightdivs__pltcontdiv  {
+    width: 100%;
+}
+
+.categories img {
+    width: 100%;
+}
+
+// This is where styling starts for the popular section
+
+.popular  {
+    min-height: 1084px;
+}
+
+.popular .wrapper   {    
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.popular__nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0;
+    width: 30%;
+}
+
+.popular__prodboxcont   {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.popular__prodbox   {
+    flex-wrap: wrap;
+    width: 17%;
+}
+
+.popular__prodimgdiv {
+    min-height: 332px;
+    position: relative;
+}
+
+.popular__prodimgdiv-hover  {
+    display: none;
+    position: absolute;
+}
+
+.popular__prodimgdiv-hover:hover    {
+    display: block;
+}
 
 
+
+// This is where responsive styling starts
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {

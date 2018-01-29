@@ -403,8 +403,7 @@ body {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
-  width: 1172px; }
+  width: 82%; }
 
 ul {
   list-style: none; }
@@ -431,14 +430,17 @@ h2 {
 
 h3 {
   font-size: 24px;
+  text-align: center;
   font-weight: 500; }
 
 h4 {
   font-size: 18px;
+  text-align: center;
   font-weight: 500; }
 
 h5 {
   font-size: 16px;
+  text-align: center;
   font-weight: 500; }
 
 a {
@@ -446,7 +448,8 @@ a {
   text-decoration: none; }
 
 p {
-  font-size: 14px; }
+  font-size: 14px;
+  text-align: center; }
 
 .italic {
   font-style: italic; }
@@ -476,13 +479,44 @@ header a:hover {
 .welcome__author span:last-of-type {
   color: #96969D; }
 
-header, .header__leftnav, .header__rightnav, .hero {
+.regprice {
+  text-decoration: line-through; }
+
+header,
+.header__leftnav,
+.header__rightnav,
+.hero,
+.welcome,
+.categories,
+.popular,
+.blog,
+.signup,
+.contact {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
 
-header, .hero, .welcome {
+header,
+.hero,
+.welcome,
+.categories,
+.popular,
+.quote,
+.blog,
+.signup,
+.contact,
+footer {
   width: 100%; }
+
+.welcome,
+.categories,
+.popular,
+.blog,
+.signup,
+.contact {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
 
 header {
   -webkit-box-align: center;
@@ -560,7 +594,33 @@ header .fa {
 .hero__shopnowbut {
   background: #FF9A9E;
   margin-top: 40px;
-  padding: 10px 30px; }
+  padding: 10px 30px;
+  position: relative; }
+
+.hero__navindicatordiv {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-top: 25%;
+  min-height: 20px;
+  position: relative;
+  width: 90px; }
+
+.hero__navcircle {
+  background: #292935;
+  border-radius: 50px;
+  height: 12px;
+  margin: 0px 5px;
+  width: 12px; }
+
+.hero__navcircle:hover {
+  background: #96969D; }
 
 .hero__shopnowbut a {
   color: #ffffff;
@@ -572,7 +632,8 @@ header .fa {
 .hero__navbutrightdiv {
   margin: 290px 30px 0px 0px; }
 
-.hero__navbutleftdiv, .hero__navbutrightdiv {
+.hero__navbutleftdiv,
+.hero__navbutrightdiv {
   padding: 20px; }
 
 .welcome {
@@ -615,6 +676,124 @@ header .fa {
 .welcome p {
   margin-top: 58px;
   width: 770px; }
+
+.categories {
+  min-height: 575px; }
+
+.categories h3 {
+  margin: 10px 0; }
+
+.categories p {
+  margin: 0;
+  padding: 0; }
+
+.categories__airpltdiv,
+.categories__rightdivs__offpltdiv,
+.categories__rightdivs__houpltdiv,
+.categories__rightdivs__pltcontdiv {
+  position: relative;
+  z-index: 40; }
+
+.categories__label__airplt,
+.categories__label__offplt,
+.categories__label__houpl,
+.categories__label__pltcont {
+  background: #ffffff;
+  position: absolute;
+  z-index: 50; }
+
+.categories__airpltdiv {
+  width: 40%; }
+
+.categories__label__airplt {
+  top: 43%;
+  right: 29%;
+  width: 40%; }
+
+.categories__label__offplt,
+.categories__label__houpl {
+  top: 30%;
+  left: 25%;
+  width: 60%; }
+
+.categories__label__pltcont {
+  top: 30%;
+  left: 25%;
+  width: 60%; }
+
+.categories__rightdivs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 60%; }
+
+.categories__rightdivs__offpltdiv,
+.categories__rightdivs__houpltdiv {
+  width: 50%; }
+
+.categories__rightdivs__pltcontdiv {
+  width: 100%; }
+
+.categories img {
+  width: 100%; }
+
+.popular {
+  min-height: 1084px; }
+
+.popular .wrapper {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center; }
+
+.popular__nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  padding: 0;
+  width: 30%; }
+
+.popular__prodboxcont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+  width: 100%; }
+
+.popular__prodbox {
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  width: 17%; }
+
+.popular__prodimgdiv {
+  min-height: 332px;
+  position: relative; }
+
+.popular__prodimgdiv-hover {
+  display: none;
+  position: absolute; }
+
+.popular__prodimgdiv-hover:hover {
+  display: block; }
 
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
