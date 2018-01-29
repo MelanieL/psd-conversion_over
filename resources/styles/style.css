@@ -494,6 +494,10 @@ header a:hover {
 .contact a:hover {
   color: #79DAD6; }
 
+footer {
+  color: #96969D;
+  font-size: 14px; }
+
 header,
 .header__leftnav,
 .header__rightnav,
@@ -503,7 +507,8 @@ header,
 .popular,
 .blog,
 .signup,
-.contact {
+.contact,
+footer {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex; }
@@ -1118,6 +1123,20 @@ header .fa {
 
 .contact__rightbox__gallery {
   padding-top: 10px; }
+
+footer {
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 40px; }
+
+footer .wrapper {
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+footer .footer__dark {
+  color: #292935; }
 
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
