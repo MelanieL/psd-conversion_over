@@ -520,6 +520,7 @@ header .fa     {
 }
 
 .signup p   {
+    padding: 10px;
     width: 52%;
 }
 
@@ -560,6 +561,128 @@ header .fa     {
 }
 
 // This is where responsive styling starts
+
+.contact    {
+    border-bottom: 1px solid $secondary;
+    border-top: 1px solid $secondary;
+}
+
+.contact__leftboxcont   {
+    display: flex;
+    padding-top: 100px;
+    width: 60%;
+}
+
+.contact__leftbox {
+    padding: 9px 0px 50px 0px;
+    width: 70%;
+}
+
+.contact__leftbox p  {
+    color: $secondary;
+    text-align: left;
+}
+
+.contact__leftbox p:first-of-type   {
+    padding-top: 5px;
+}
+
+.contact__leftbox span  {
+    color: $primary;
+}
+
+.contact__smedbox i {
+    padding: 7px;
+}
+
+.fa-twitter {
+    color: $secondary;
+}
+
+.contact h3 {
+    margin-top: 0;
+    position: relative;
+    text-align: left;
+}
+
+.contact h3::after  {
+    border-bottom: 1px solid $quaternary;
+    content: "";
+    height: 12px;
+    position: absolute;
+    width: 45px;
+}
+
+.contact__lcbox h3::after   {
+    bottom: 0px;
+    right: 126px;
+}
+
+.contact__rcbox h3::after   {
+    bottom: 0px;
+    right: 120px;
+}
+
+.contact__rightbox h3::after   {
+    right: 230px;
+    top: 30px;
+}
+
+.contact__lcbox,
+.contact__rcbox {
+	display: flex;
+	flex-direction: column;
+	padding-left: 10px;
+	line-height: 2;
+}
+
+.contact__rcbox,
+.contact__rightboxcont {
+    padding-top: 100px;
+}
+
+.contact__rcbox {
+    width: 15%;
+}
+
+.contact__rightboxcont  {
+    padding-left: 20px;
+    width: 25%;
+}
+
+.contact__rightbox h3   {
+    margin-top: 5px;
+}
+
+.contac__rightbox__instagalleryimgdiv   {
+    width: 32%;
+}
+
+.contac__rightbox__instagalleryimgdiv img   {
+    height: auto;
+    width: 100%;
+}
+
+.contact__rightbox__gallery {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+.contact__pmbox {
+    display: flex;
+}
+
+.contact__pmboximgdiv   {
+    padding: 25px 7px 0px 7px;
+}
+
+.contact__rightbox__gallery {
+    padding-top: 10px;
+}
+
+
+
 
 /* Portrait tablet and small desktops */
 @media (max-width: 940px) {

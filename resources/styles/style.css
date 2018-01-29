@@ -491,6 +491,9 @@ header a:hover {
   color: #96969D;
   font-size: 14px; }
 
+.contact a:hover {
+  color: #79DAD6; }
+
 header,
 .header__leftnav,
 .header__rightnav,
@@ -969,6 +972,7 @@ header .fa {
   padding-top: 25px; }
 
 .signup p {
+  padding: 10px;
   width: 52%; }
 
 .signup__emailbox {
@@ -1005,6 +1009,115 @@ header .fa {
 
 .signup__locationimgscont img {
   width: 100%; }
+
+.contact {
+  border-bottom: 1px solid #96969D;
+  border-top: 1px solid #96969D; }
+
+.contact__leftboxcont {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding-top: 100px;
+  width: 60%; }
+
+.contact__leftbox {
+  padding: 9px 0px 50px 0px;
+  width: 70%; }
+
+.contact__leftbox p {
+  color: #96969D;
+  text-align: left; }
+
+.contact__leftbox p:first-of-type {
+  padding-top: 5px; }
+
+.contact__leftbox span {
+  color: #292935; }
+
+.contact__smedbox i {
+  padding: 7px; }
+
+.fa-twitter {
+  color: #96969D; }
+
+.contact h3 {
+  margin-top: 0;
+  position: relative;
+  text-align: left; }
+
+.contact h3::after {
+  border-bottom: 1px solid #79DAD6;
+  content: "";
+  height: 12px;
+  position: absolute;
+  width: 45px; }
+
+.contact__lcbox h3::after {
+  bottom: 0px;
+  right: 126px; }
+
+.contact__rcbox h3::after {
+  bottom: 0px;
+  right: 120px; }
+
+.contact__rightbox h3::after {
+  right: 230px;
+  top: 30px; }
+
+.contact__lcbox,
+.contact__rcbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  padding-left: 10px;
+  line-height: 2; }
+
+.contact__rcbox,
+.contact__rightboxcont {
+  padding-top: 100px; }
+
+.contact__rcbox {
+  width: 15%; }
+
+.contact__rightboxcont {
+  padding-left: 20px;
+  width: 25%; }
+
+.contact__rightbox h3 {
+  margin-top: 5px; }
+
+.contac__rightbox__instagalleryimgdiv {
+  width: 32%; }
+
+.contac__rightbox__instagalleryimgdiv img {
+  height: auto;
+  width: 100%; }
+
+.contact__rightbox__gallery {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between; }
+
+.contact__pmbox {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.contact__pmboximgdiv {
+  padding: 25px 7px 0px 7px; }
+
+.contact__rightbox__gallery {
+  padding-top: 10px; }
 
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */
