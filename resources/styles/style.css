@@ -458,6 +458,7 @@ p {
   font-weight: bold; }
 
 .font__pressstyle {
+  color: #ffffff;
   font-family: "PressStyle"; }
 
 header a {
@@ -480,7 +481,11 @@ header a:hover {
   color: #96969D; }
 
 .regprice {
+  color: #96969D;
   text-decoration: line-through; }
+
+.popular__prodpricing p {
+  font-weight: 400; }
 
 header,
 .header__leftnav,
@@ -608,7 +613,6 @@ header .fa {
   -ms-flex-pack: center;
   justify-content: center;
   margin-top: 25%;
-  min-height: 20px;
   position: relative;
   width: 90px; }
 
@@ -635,9 +639,6 @@ header .fa {
 .hero__navbutleftdiv,
 .hero__navbutrightdiv {
   padding: 20px; }
-
-.welcome {
-  min-height: 490px; }
 
 .welcome .wrapper {
   -webkit-box-align: center;
@@ -676,9 +677,6 @@ header .fa {
 .welcome p {
   margin-top: 58px;
   width: 770px; }
-
-.categories {
-  min-height: 575px; }
 
 .categories h3 {
   margin: 10px 0; }
@@ -739,9 +737,6 @@ header .fa {
 .categories img {
   width: 100%; }
 
-.popular {
-  min-height: 1084px; }
-
 .popular .wrapper {
   -webkit-box-align: center;
   -ms-flex-align: center;
@@ -754,6 +749,35 @@ header .fa {
   -ms-flex-pack: center;
   justify-content: center; }
 
+.popular__titleunderlinesdiv {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: row;
+  flex-direction: row;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  margin-bottom: 50px;
+  width: 10%; }
+
+.popular__titleunderlinel,
+.popular__titleunderlinec,
+.popular__titleunderliner {
+  height: 5px;
+  margin: 0;
+  padding: 0;
+  width: 31%; }
+
+.popular__titleunderlinel,
+.popular__titleunderliner {
+  border-bottom: 2px solid #79DAD6; }
+
+.popular__titleunderlinec {
+  border-bottom: 2px solid #96969D; }
+
 .popular__nav {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -761,8 +785,12 @@ header .fa {
   -webkit-box-pack: justify;
   -ms-flex-pack: justify;
   justify-content: space-between;
-  padding: 0;
+  margin-bottom: 40px;
+  padding: 0px;
   width: 30%; }
+
+.popular__nav a:hover {
+  border-bottom: 1px solid #292935; }
 
 .popular__prodboxcont {
   display: -webkit-box;
@@ -785,8 +813,10 @@ header .fa {
   width: 17%; }
 
 .popular__prodimgdiv {
-  min-height: 332px;
   position: relative; }
+
+.popular__prodimgdiv img {
+  width: 100%; }
 
 .popular__prodimgdiv-hover {
   display: none;
@@ -794,6 +824,87 @@ header .fa {
 
 .popular__prodimgdiv-hover:hover {
   display: block; }
+
+.popular__price {
+  margin-bottom: 48px; }
+
+.popular__prodpricing p:first-of-type {
+  margin-top: 0; }
+
+.regprice {
+  margin-left: 10px; }
+
+.quote {
+  height: 60vh; }
+
+.quote__leftbox {
+  background-image: url(../images/image_quoteleftbackground.jpg);
+  background-size: cover;
+  float: left;
+  height: 60vh;
+  width: 50%; }
+
+.quote__rightbox {
+  background-image: url(../images/image_videoplaceholder.jpg);
+  float: right;
+  height: 60vh;
+  width: 50%; }
+
+.quote h2 {
+  margin: 0;
+  padding: 48px 0px 0px 0px; }
+
+.quote__leftbox__imgdiv {
+  padding-top: 5px;
+  text-align: center; }
+
+.quote p:first-of-type {
+  margin: 0 auto;
+  padding-top: 15px;
+  width: 90%; }
+
+.quote p:last-of-type {
+  color: #96969D; }
+
+.quote__leftbox__popcirclediv {
+  text-align: center; }
+
+.quote__leftbox__popcircles {
+  background: #96969D;
+  border-bottom: 3px solid transparent;
+  border-radius: 50px;
+  display: inline-block;
+  height: 30px;
+  margin: 20px;
+  width: 30px; }
+
+.quote__leftbox__popcircles:hover {
+  height: 40px;
+  width: 40px; }
+
+.quote__rightbox__mediabut {
+  padding-top: 90px;
+  text-align: center; }
+
+.quote__rightbox__txt {
+  margin: 0 auto;
+  text-align: center;
+  width: 60%; }
+
+.quote h1,
+.quote__rightbox__planticondiv {
+  display: inline-block;
+  margin: 0;
+  width: 30%; }
+
+.quote__rightbox__planticondiv {
+  padding-top: 10px; }
+
+.quote h5 {
+  color: #ffffff;
+  font-size: 16px;
+  font-weight: 400;
+  margin-top: 0; }
 
 /* Portrait tablet and small desktops */
 /* Landscape phone to portrait tablet */

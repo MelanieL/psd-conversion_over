@@ -59,6 +59,7 @@ p   {
 }
 
 .font__pressstyle   {
+    color: $tertiary;
     font-family: "PressStyle";
 }
 
@@ -88,5 +89,10 @@ header a:hover  {
 }
 
 .regprice   {
+    color: $secondary;
     text-decoration: line-through;
+}
+
+.popular__prodpricing p   {
+    font-weight: 400;
 }

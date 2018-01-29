@@ -125,7 +125,6 @@ header .fa     {
     display: flex;
     justify-content: center;
     margin-top: 25%;
-    min-height: 20px;
     position: relative;
     width: 90px
 }
@@ -161,10 +160,6 @@ header .fa     {
 }
 
 // This is where the .welcome styling begins
-
-.welcome    {
-    min-height: 490px;
-}
 
 .welcome .wrapper   {
     align-items: center;
@@ -208,10 +203,6 @@ header .fa     {
 }
 
 // This is where styling for the categories section begins
-
-.categories {
-    min-height: 575px;
-}
 
 .categories h3  {
     margin: 10px 0;
@@ -291,21 +282,49 @@ header .fa     {
 
 // This is where styling starts for the popular section
 
-.popular  {
-    min-height: 1084px;
-}
-
 .popular .wrapper   {    
     align-items: center;
     flex-direction: column;
     justify-content: center;
 }
 
+.popular__titleunderlinesdiv {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-bottom: 50px;
+    width: 10%;
+}
+
+.popular__titleunderlinel,
+.popular__titleunderlinec,
+.popular__titleunderliner   { 
+    height: 5px;
+    margin: 0;
+    padding: 0;
+    width: 31%;
+    
+}
+
+.popular__titleunderlinel,
+.popular__titleunderliner   {
+    border-bottom: 2px solid $quaternary;
+}
+
+.popular__titleunderlinec   {
+    border-bottom: 2px solid $secondary;
+}
+
 .popular__nav {
     display: flex;
     justify-content: space-between;
-    padding: 0;
+    margin-bottom: 40px;
+    padding: 0px;
     width: 30%;
+}
+
+.popular__nav a:hover   {
+    border-bottom: 1px solid $primary;
 }
 
 .popular__prodboxcont   {
@@ -322,8 +341,11 @@ header .fa     {
 }
 
 .popular__prodimgdiv {
-    min-height: 332px;
     position: relative;
+}
+
+.popular__prodimgdiv img    {
+    width: 100%;
 }
 
 .popular__prodimgdiv-hover  {
@@ -333,6 +355,107 @@ header .fa     {
 
 .popular__prodimgdiv-hover:hover    {
     display: block;
+}
+
+.popular__price     {
+    margin-bottom: 48px;
+}
+
+.popular__prodpricing p:first-of-type   {
+    margin-top: 0;
+}
+
+.regprice   {
+    margin-left: 10px;
+}
+
+// This is where styling starts for the quote section
+
+.quote  {
+    height: 60vh;
+}
+
+.quote__leftbox {
+    background-image: url(../images/image_quoteleftbackground.jpg);
+    background-size: cover;
+    float: left;
+    height: 60vh;
+    width: 50%;
+}
+
+.quote__rightbox    {
+    background-image: url(../images/image_videoplaceholder.jpg);
+    float: right;
+    height: 60vh;
+    width: 50%;
+}
+
+.quote h2  {
+    margin: 0;
+    padding: 48px 0px 0px 0px;
+}
+
+.quote__leftbox__imgdiv {
+    padding-top: 5px;
+    text-align: center;
+}
+
+.quote p:first-of-type  {
+    margin: 0 auto;
+    padding-top: 15px;
+    width: 90%;
+}
+
+.quote p:last-of-type   {
+    color: $secondary;
+}
+
+.quote__leftbox__popcirclediv   {
+    text-align: center;
+}
+
+.quote__leftbox__popcircles {
+    background: $secondary;
+    border-bottom: 3px solid transparent;
+    border-radius: 50px;
+    display: inline-block;
+    height: 30px;
+    margin: 20px;
+    width: 30px;
+}
+
+.quote__leftbox__popcircles:hover {
+    height: 40px;
+    width: 40px;
+}
+
+.quote__rightbox__mediabut  {
+    padding-top: 90px;
+    text-align: center;
+}
+
+.quote__rightbox__txt   {
+    margin: 0 auto;
+    text-align: center;
+    width: 60%;
+}
+
+.quote h1,
+.quote__rightbox__planticondiv   {
+    display: inline-block;
+    margin: 0;
+    width: 30%;
+}
+
+.quote__rightbox__planticondiv  {
+    padding-top: 10px;
+}
+
+.quote h5   {
+    color: $tertiary;
+    font-size: 16px;
+    font-weight: 400;
+    margin-top: 0;
 }
 
 
