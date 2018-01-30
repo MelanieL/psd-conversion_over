@@ -200,10 +200,14 @@ header .fa     {
 
 .welcome p  {
     margin-top: 58px;
-    width: 770px;
+    width: 70%;
 }
 
-// This is where styling for the categories section begins
+// This is where styling for the categories section begins 
+
+.categories {
+    padding-top: 100px;
+}
 
 .categories h3  {
     margin: 10px 0;
@@ -212,15 +216,6 @@ header .fa     {
 .categories p   {
     margin: 0;
     padding: 0;
-}
-
-.categories__airpltdiv, 
-.categories__rightdivs__offpltdiv, 
-.categories__rightdivs__houpltdiv, 
-.categories__rightdivs__pltcontdiv
-  {
-    position: relative;
-    z-index: 40;
 }
 
 .categories__label__airplt,
@@ -232,9 +227,36 @@ header .fa     {
     z-index: 50;
 }
 
-.categories__airpltdiv  {
-    // margin-right: 10px;
-    width: 40%;
+.categories .wrapper    {
+    display: grid;
+    grid-gap: 15px;
+    grid-template-columns: 40% 30% 30%;
+    grid-template-rows: 40% 30% 30%;
+    grid-template-areas: 
+        "air office house"
+        "air container container";
+    margin: 0 auto;
+
+}
+
+.categories__airpltdiv   {
+    grid-area: air;
+    position: relative;
+}
+
+.categories__rightdivs__offpltdiv   {
+    grid-area: office;
+    position: relative;
+}
+
+.categories__rightdivs__houpltdiv   {
+    grid-area: house;
+    position: relative;
+}
+
+.categories__rightdivs__pltcontdiv  {
+    grid-area: container;
+    position: relative;
 }
 
 .categories__label__airplt   {
@@ -256,32 +278,16 @@ header .fa     {
     width: 60%;
 }
 
-.categories__rightdivs  {
-    display: flex;
-    flex-wrap: wrap;
-    width: 60%;
-}
-
-.categories__offpltimgdiv,
-.categories__houpltimgdiv,
-.categories__pltcontimgdiv  {
-    // margin-left: 10px;
-}
-
-.categories__rightdivs__offpltdiv,
-.categories__rightdivs__houpltdiv  {
-    width: 50%;
-}
-
-.categories__rightdivs__pltcontdiv  {
-    width: 100%;
-}
-
 .categories img {
+    height: 100%;
     width: 100%;
 }
 
 // This is where styling starts for the popular section
+
+.popular    {
+    margin-top: 70px;
+}
 
 .popular .wrapper   {    
     align-items: center;
