@@ -549,22 +549,42 @@ header {
   justify-content: center;
   min-height: 100px;
   position: fixed;
-  z-index: 60; }
+  z-index: 100; }
 
 header ul {
   padding: 0; }
 
 .header__leftnav {
-  margin-right: 100px; }
+  margin-right: 7%;
+  width: 28%; }
 
 .header__leftnav a {
   padding: 0px 20px; }
 
 .logoimgdiv {
-  margin-right: 232px; }
+  margin-right: 16%;
+  width: 9%; }
+
+header svg {
+  width: 100%; }
 
 .header__rightnav {
-  margin-right: 100px; }
+  margin-right: 4%; }
+
+.header__notecircle {
+  background: #79DAD6;
+  border-radius: 50px;
+  height: 20px;
+  position: absolute;
+  right: 24%;
+  top: 30%;
+  width: 20px; }
+
+.header__notecircle p {
+  margin: 0; }
+
+.header__rightnav__bagicondiv {
+  position: relative; }
 
 .header__rightnav__bagicon {
   height: 25px;
@@ -576,7 +596,7 @@ header ul {
 
 header .fa {
   font-size: 23px;
-  margin: 0px 15px; }
+  margin: 0px 30%; }
 
 .hero {
   background-size: cover;
@@ -613,6 +633,9 @@ header .fa {
   margin-top: 40px;
   padding: 10px 30px;
   position: relative; }
+
+.hero__shopnowbut:hover {
+  background: #96969D; }
 
 .hero__navindicatordiv {
   -webkit-box-align: center;
@@ -698,7 +721,10 @@ header .fa {
 
 .categories p {
   margin: 0;
-  padding: 0; }
+  padding: 0px 0px 7px 0px; }
+
+.categories p:last-child {
+  color: #96969D; }
 
 .categories__label__airplt,
 .categories__label__offplt,
@@ -828,20 +854,72 @@ header .fa {
 .popular__prodbox {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
+  position: relative;
   width: 17%; }
 
-.popular__prodimgdiv {
-  position: relative; }
+.popular__hotbut,
+.popular__newbut,
+.popular__twentyoffbut {
+  border-radius: 5px;
+  color: #ffffff;
+  font-size: 10px;
+  height: 20px;
+  left: 75%;
+  margin: 0.5%;
+  position: absolute;
+  top: 2%;
+  width: 40px;
+  z-index: 70; }
+
+.popular__hotbut p,
+.popular__newbut p,
+.popular__twentyoffbut p {
+  margin: 0; }
+
+.popular__butlvl2 {
+  top: 10%; }
+
+.popular__hotbut {
+  background: #FF9A9E; }
+
+.popular__newbut {
+  background: #79DAD6; }
+
+.popular__twentyoffbut {
+  background: #F6B895; }
 
 .popular__prodimgdiv img {
   width: 100%; }
 
-.popular__prodimgdiv-hover {
-  display: none;
-  position: absolute; }
+.popular__prodimgdiv {
+  position: relative; }
+  .popular__prodimgdiv:hover .popular__prodimgdiv-hover {
+    visibility: visible; }
 
-.popular__prodimgdiv-hover:hover {
-  display: block; }
+.popular__prodimgdiv-hover {
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  background: rgba(134, 135, 145, 0.7);
+  bottom: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 98%;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  left: 0;
+  position: absolute;
+  right: 0;
+  top: 0;
+  visibility: hidden; }
+
+.popular__prodimgdiv-hover a {
+  background: #ffffff;
+  border: 1px solid #96969D;
+  color: #96969D;
+  padding: 3% 8%; }
 
 .popular__price {
   margin-bottom: 48px; }
@@ -852,25 +930,21 @@ header .fa {
 .regprice {
   margin-left: 10px; }
 
-.quote {
-  height: 60vh; }
-
 .quote__leftbox {
   background-image: url(../images/image_quoteleftbackground.jpg);
   background-size: cover;
   float: left;
-  height: 60vh;
   width: 50%; }
 
 .quote__rightbox {
   background-image: url(../images/image_videoplaceholder.jpg);
+  background-size: cover;
   float: right;
-  height: 60vh;
   width: 50%; }
 
 .quote h2 {
   margin: 0;
-  padding: 48px 0px 0px 0px; }
+  padding: 140px 0px 0px 0px; }
 
 .quote__leftbox__imgdiv {
   padding-top: 5px;
@@ -885,6 +959,8 @@ header .fa {
   color: #96969D; }
 
 .quote__leftbox__popcirclediv {
+  margin-top: 40px;
+  padding-bottom: 102px;
   text-align: center; }
 
 .quote__leftbox__popcircles {
@@ -893,7 +969,6 @@ header .fa {
   border-radius: 50px;
   display: inline-block;
   height: 30px;
-  margin: 20px;
   width: 30px; }
 
 .quote__leftbox__popcircles:hover {
@@ -901,7 +976,7 @@ header .fa {
   width: 40px; }
 
 .quote__rightbox__mediabut {
-  padding-top: 90px;
+  padding-top: 170px;
   text-align: center; }
 
 .quote__rightbox__txt {
@@ -922,7 +997,11 @@ header .fa {
   color: #ffffff;
   font-size: 16px;
   font-weight: 400;
-  margin-top: 0; }
+  margin-top: 0;
+  padding-bottom: 117.4px; }
+
+.quote__rightbox__mediabut img {
+  width: 85px; }
 
 .blog .wrapper {
   -webkit-box-align: center;
@@ -1049,7 +1128,7 @@ header .fa {
 .contact__smedbox i {
   padding: 7px; }
 
-.fa-twitter {
+.contact i:hover {
   color: #96969D; }
 
 .contact h3 {

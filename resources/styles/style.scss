@@ -49,7 +49,7 @@ header  {
     justify-content: center;
     min-height: 100px;
     position: fixed;
-    z-index: 60;
+    z-index:100;
 }
 
 header ul   {
@@ -57,7 +57,8 @@ header ul   {
 }
 
 .header__leftnav    {
-    margin-right: 100px;
+    margin-right: 7%;
+    width: 28%;
 }
 
 .header__leftnav a   {
@@ -65,12 +66,35 @@ header ul   {
 }
 
 .logoimgdiv {
-    margin-right: 232px;
+    margin-right: 16%;
+    width: 9%;
+}
+
+header svg  {
+    width: 100%;
 }
 
 .header__rightnav   {
-    margin-right: 100px;
+    margin-right: 4%;
 }
+
+.header__notecircle {
+    background: $quaternary;
+    border-radius: 50px;
+    height: 20px;
+    position: absolute;
+    right: 24%;
+    top: 30%;
+    width: 20px;
+}
+
+.header__notecircle p   {
+    margin: 0;
+}
+
+.header__rightnav__bagicondiv   {
+    position: relative;
+}    
 
 .header__rightnav__bagicon  {
     height: 25px;
@@ -84,7 +108,7 @@ header ul   {
 
 header .fa     {
     font-size: 23px;
-    margin: 0px 15px;
+    margin: 0px 30%;
 }
 
 // This is where the hero styling begins
@@ -119,6 +143,10 @@ header .fa     {
 	margin-top: 40px;
     padding: 10px 30px;
     position: relative;
+}
+
+.hero__shopnowbut:hover   {
+    background: $secondary;
 }
 
 .hero__navindicatordiv   {
@@ -215,7 +243,11 @@ header .fa     {
 
 .categories p   {
     margin: 0;
-    padding: 0;
+    padding: 0px 0px 7px 0px;
+}
+
+.categories p:last-child    {
+    color: $secondary;
 }
 
 .categories__label__airplt,
@@ -344,24 +376,77 @@ header .fa     {
 
 .popular__prodbox   {
     flex-wrap: wrap;
+    position: relative;
     width: 17%;
 }
 
-.popular__prodimgdiv {
-    position: relative;
+.popular__hotbut,
+.popular__newbut,
+.popular__twentyoffbut  {
+    border-radius: 5px;
+    color: $tertiary;
+    font-size: 10px;
+    height: 20px;
+    left: 75%;
+    margin: 0.5%;
+    position: absolute;
+    top: 2%;
+    width: 40px;
+    z-index: 70;
 }
+
+.popular__hotbut p,
+.popular__newbut p,
+.popular__twentyoffbut p  {
+    margin: 0;
+}
+
+.popular__butlvl2   {
+    top: 10%;
+}
+
+.popular__hotbut    {
+    background: $quinary;
+}
+
+.popular__newbut    {
+    background: $quaternary;
+}
+
+.popular__twentyoffbut  {
+    background: $senary;
+}    
 
 .popular__prodimgdiv img    {
     width: 100%;
-}
+}    
+
+.popular__prodimgdiv    {
+    position: relative;
+    &:hover .popular__prodimgdiv-hover {
+        visibility: visible;
+    }
+} 
 
 .popular__prodimgdiv-hover  {
-    display: none;
-    position: absolute;
+    align-items: center;
+    background: rgba(134, 135, 145, 0.7);
+	bottom: 0;
+	display: flex;
+    height: 98%;
+	justify-content: center;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+    visibility: hidden;
 }
 
-.popular__prodimgdiv-hover:hover    {
-    display: block;
+.popular__prodimgdiv-hover a   {
+    background: $tertiary;    
+    border: 1px solid $secondary;
+    color: $secondary;
+    padding: 3% 8%;
 }
 
 .popular__price     {
@@ -378,28 +463,23 @@ header .fa     {
 
 // This is where styling starts for the quote section
 
-.quote  {
-    height: 60vh;
-}
-
 .quote__leftbox {
     background-image: url(../images/image_quoteleftbackground.jpg);
     background-size: cover;
     float: left;
-    height: 60vh;
     width: 50%;
 }
 
 .quote__rightbox    {
     background-image: url(../images/image_videoplaceholder.jpg);
+    background-size: cover;
     float: right;
-    height: 60vh;
     width: 50%;
 }
 
 .quote h2  {
     margin: 0;
-    padding: 48px 0px 0px 0px;
+    padding: 140px 0px 0px 0px;
 }
 
 .quote__leftbox__imgdiv {
@@ -418,6 +498,8 @@ header .fa     {
 }
 
 .quote__leftbox__popcirclediv   {
+    margin-top: 40px;
+    padding-bottom: 102px;
     text-align: center;
 }
 
@@ -427,7 +509,6 @@ header .fa     {
     border-radius: 50px;
     display: inline-block;
     height: 30px;
-    margin: 20px;
     width: 30px;
 }
 
@@ -437,7 +518,7 @@ header .fa     {
 }
 
 .quote__rightbox__mediabut  {
-    padding-top: 90px;
+    padding-top: 170px;
     text-align: center;
 }
 
@@ -463,6 +544,11 @@ header .fa     {
     font-size: 16px;
     font-weight: 400;
     margin-top: 0;
+    padding-bottom: 117.4px;
+}
+
+.quote__rightbox__mediabut img  {
+    width: 85px;
 }
 
 // This is where styling begins for the blog section
@@ -602,7 +688,7 @@ header .fa     {
     padding: 7px;
 }
 
-.fa-twitter {
+.contact i:hover {
     color: $secondary;
 }
 
@@ -706,7 +792,8 @@ footer .footer__dark   {
 
 
 /* Portrait tablet and small desktops */
-@media (max-width: 940px) {
+@media (max-width: 1050px) {
+
 }
 
 /* Landscape phone to portrait tablet */
