@@ -450,6 +450,10 @@ header .fa     {
     margin-bottom: 48px;
 }
 
+.fa-cart-plus   {
+    display: none;
+}
+
 .popular__prodpricing p:first-of-type   {
     margin-top: 0;
 }
@@ -819,20 +823,21 @@ footer .footer__dark   {
 }
 
 /* Portrait tablet and small desktops */
+
 @media (max-width: 1014px) {
-
+    
     .hero__navindicatordiv {
-	margin-top: 5%;
+        margin-top: 5%;
     }
-
+    
     .quote__leftbox h2 {
         font-size: 24px;
     }
-
+    
     .quote__rightbox__txt h1    {
         font-size: 70px;
     }
-
+    
     .quote__rightbox__txt h5    {
         font-size: 12px; 
     }
@@ -840,46 +845,47 @@ footer .footer__dark   {
     .quote__rightbox__planticondiv  {
         width: 20%;
     }
-
+    
     .quote__rightbox__mediabut  {
         margin-left: 25px;
     }
-
+    
     .categories__label__airplt h3,
     .categories__label__offplt h3, 
     .categories__label__houpl h3, 
     .categories__label__pltcont h3 {
         font-size: 12px;
     }
-
+    
     .categories p   {
         font-size: 12px;
     }
-
+    
     .contact__lcbox a,
     .contact__rcbox a   {
         border-bottom: .5px solid $secondary;
     }
-
+    
     .contact__lcbox a:last-of-type,
     .contact__rcbox a:last-of-type   {
         border-bottom: none;
     }
-
+    
     footer p    {
         font-size: 10px;
     }
 }
 
+/* This is where hover states can start to be removed for table users */
 @media (max-width: 805px)   {
     .header__leftnav    {
         margin-right: 2%;
     }
-
+    
     .logoimgdiv     {
         width: 10%;
     }
-
+    
     .header__rightnav   {
         margin-left: 2%;
     }
@@ -893,6 +899,33 @@ footer .footer__dark   {
         width: unset;
     }
 
+    .popular__prodimgdiv-hover  {
+        display: none;
+    }
+
+    .fa-cart-plus   {
+        display: inline;
+        padding-left: 30%;
+    }
+
+    .popular__price {
+        display: inline-block;
+        width: 45%;
+    }
+
+    .popular__prodpricing a {
+        display: inline-block;
+        float: right;
+        font-size: 36px;
+        margin-left: 20%;
+        padding-right: 25px;
+    }
+
+    .popular__description   {
+	    width: 100%;
+	    justify-content: center;
+    }
+    
     .signup__locationimgdiv {
         width: 15%;
     }
@@ -900,97 +933,97 @@ footer .footer__dark   {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 660px) {
-    .header__rightnav__bagicon {
-        height: 25px;
-        margin: 0px 10px 0px 0px;
-        width: 18px;
-    }
-
-    .header__notecircle {
-	left: 10%;
-    }
-    
-    .hero__navindicatordiv  {
-        display: none;
-    }
-
-    .hero__centercontent h2     {
-        font-size: 22px;
-    }
-
-    .hero__centercontent h1     {
-        font-size: 46px;
-    }
-
-    .contact .wrapper   {
-        flex-wrap: wrap;
-    }
-
-    .contact__leftboxcont  {
-        width: 100%;
-    }
-
-    .contact__rcbox     {
-        width: 38%;
-    }
-
-    .contact__rightboxcont  {
-        width: 55%;
-    }
-
-    .quote  {
-        flex-wrap: wrap;
-    }
-
-    .quote__leftbox,
-    .quote__rightbox    {
-        width: 100%;
-    }
-
-    .quote__rightbox__mediabut  {
-        padding-top: unset;
-    }
-
-    .quote__rightbox  {
-        padding: 50px 0px;
-    }
-
-    .contact__lcbox {
-	padding: 15px 0px 0px 10px;
-}
-
-}
-
-/* Landscape phones and down */
-@media (max-width: 480px) {
-
     header  {
         flex-direction: row;
         flex-wrap: wrap;
         min-height: unset;
     }
-
+    
     .header__leftnav    {
         order: 3;
         padding-bottom: 10px;
     }
-
+    
     .logoimgdiv     {
         margin: 20px;
         width: 36%;
     }
-
+    
     .header__rightnav   {
         width: 28%;
     }
-
+    
     .header__notecircle {
         left: 20%;
     }
-
+    
     .header__rightnav a:first-of-type {
         padding-left: 15px;
     }
+
+    .header__rightnav__bagicon {
+        height: 25px;
+        margin: 0px 10px 0px 0px;
+        width: 18px;
+    }    
+
+    .hero__navindicatordiv  {
+        display: none;
+    }    
+
+    .hero__centercontent h2     {
+        font-size: 22px;
+    }    
+
+    .hero__centercontent h1     {
+        font-size: 46px;
+    }    
+
+    .contact .wrapper   {
+        flex-wrap: wrap;
+    }    
+
+    .contact__leftboxcont  {
+        width: 100%;
+    }    
+
+    .contact__rcbox     {
+        width: 38%;
+    }    
+
+    .contact__rightboxcont  {
+        width: 55%;
+    }    
+
+    .quote  {
+        flex-wrap: wrap;
+    }    
+
+    .quote__leftbox,
+    .quote__rightbox    {
+        width: 100%;
+    }    
+
+    .quote__rightbox__mediabut  {
+        padding-top: unset;
+    }    
+
+    .quote__rightbox  {
+        padding: 50px 0px;
+    }    
+
+    .contact__lcbox {
+	    padding: 15px 0px 0px 10px;    
+    }    
+
+    .contact__pmbox {
+        padding-bottom: 50px;
+    }
+
+}
+
+/* Landscape phones and down */
+@media (max-width: 480px) {
 
     .hero h2 {
     	margin-top: 130px;
@@ -1062,5 +1095,77 @@ footer .footer__dark   {
     }
 
 
+}
+
+@media (max-width: 415px) {
+    .header__leftnav    {
+        flex-wrap: wrap;
+        justify-content: center;
+        margin: 0;
     }
+
+    .header__notecircle     {
+    	left: 26%;
+    }
+
+    .header__notecircle i {
+    	padding-left: 15px;
+    }
+
+    .header__leftnav a {
+	    padding: 4px 30px;
+    }
+
+    .header__rightnav .fa   {
+        margin: 0;
+    }
+
+    .fa-search  {
+        padding-left: 8px;
+    }
+
+    .fa-bars    {
+        padding-left: 12px;
+    }
+
+    .hero__centercontent h1 {
+	    font-size: 28px;
+    }
+
+    .hero__centercontent h2 {
+	    font-size: 18px;
+    }
+
+    .hero__shopnowbut   {
+        width: 100%;
+        text-align: center;
+        }
+
+    .categories__label__pltcont {
+        top: 23%;
+        left: 21%;
+    }
+
+    .popular__nav   {
+        flex-direction: column;
+        text-align: center;
+        }
+
+    .popular__nav a {
+        padding: 10px 30px;
+    }
+
+    .popular__titleunderlinesdiv {
+        display: none;
+    }
+
+    .signup__emailbox p {
+        display: none;
+    }
+
+    .signup input {
+    	width: 88%;
+    }
+
+}
 

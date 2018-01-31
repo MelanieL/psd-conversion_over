@@ -928,6 +928,9 @@ header .fa {
 .popular__price {
   margin-bottom: 48px; }
 
+.fa-cart-plus {
+  display: none; }
+
 .popular__prodpricing p:first-of-type {
   margin-top: 0; }
 
@@ -1276,6 +1279,7 @@ footer .footer__dark {
   footer p {
     font-size: 10px; } }
 
+/* This is where hover states can start to be removed for table users */
 @media (max-width: 805px) {
   .header__leftnav {
     margin-right: 2%; }
@@ -1289,17 +1293,56 @@ footer .footer__dark {
     width: unset; }
   .popular__prodbox {
     width: unset; }
+  .popular__prodimgdiv-hover {
+    display: none; }
+  .fa-cart-plus {
+    display: inline;
+    padding-left: 30%; }
+  .popular__price {
+    display: inline-block;
+    width: 45%; }
+  .popular__prodpricing a {
+    display: inline-block;
+    float: right;
+    font-size: 36px;
+    margin-left: 20%;
+    padding-right: 25px; }
+  .popular__description {
+    width: 100%;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
   .signup__locationimgdiv {
     width: 15%; } }
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 660px) {
+  header {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    min-height: unset; }
+  .header__leftnav {
+    -webkit-box-ordinal-group: 4;
+    -ms-flex-order: 3;
+    order: 3;
+    padding-bottom: 10px; }
+  .logoimgdiv {
+    margin: 20px;
+    width: 36%; }
+  .header__rightnav {
+    width: 28%; }
+  .header__notecircle {
+    left: 20%; }
+  .header__rightnav a:first-of-type {
+    padding-left: 15px; }
   .header__rightnav__bagicon {
     height: 25px;
     margin: 0px 10px 0px 0px;
     width: 18px; }
-  .header__notecircle {
-    left: 10%; }
   .hero__navindicatordiv {
     display: none; }
   .hero__centercontent h2 {
@@ -1326,32 +1369,12 @@ footer .footer__dark {
   .quote__rightbox {
     padding: 50px 0px; }
   .contact__lcbox {
-    padding: 15px 0px 0px 10px; } }
+    padding: 15px 0px 0px 10px; }
+  .contact__pmbox {
+    padding-bottom: 50px; } }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-  header {
-    -webkit-box-orient: horizontal;
-    -webkit-box-direction: normal;
-    -ms-flex-direction: row;
-    flex-direction: row;
-    -ms-flex-wrap: wrap;
-    flex-wrap: wrap;
-    min-height: unset; }
-  .header__leftnav {
-    -webkit-box-ordinal-group: 4;
-    -ms-flex-order: 3;
-    order: 3;
-    padding-bottom: 10px; }
-  .logoimgdiv {
-    margin: 20px;
-    width: 36%; }
-  .header__rightnav {
-    width: 28%; }
-  .header__notecircle {
-    left: 20%; }
-  .header__rightnav a:first-of-type {
-    padding-left: 15px; }
   .hero h2 {
     margin-top: 130px; }
   .categories .wrapper {
@@ -1406,3 +1429,48 @@ footer .footer__dark {
     width: 37%; }
   .contact__rightboxcont {
     width: 50%; } }
+
+@media (max-width: 415px) {
+  .header__leftnav {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    margin: 0; }
+  .header__notecircle {
+    left: 26%; }
+  .header__notecircle i {
+    padding-left: 15px; }
+  .header__leftnav a {
+    padding: 4px 30px; }
+  .header__rightnav .fa {
+    margin: 0; }
+  .fa-search {
+    padding-left: 8px; }
+  .fa-bars {
+    padding-left: 12px; }
+  .hero__centercontent h1 {
+    font-size: 28px; }
+  .hero__centercontent h2 {
+    font-size: 18px; }
+  .hero__shopnowbut {
+    width: 100%;
+    text-align: center; }
+  .categories__label__pltcont {
+    top: 23%;
+    left: 21%; }
+  .popular__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    text-align: center; }
+  .popular__nav a {
+    padding: 10px 30px; }
+  .popular__titleunderlinesdiv {
+    display: none; }
+  .signup__emailbox p {
+    display: none; }
+  .signup input {
+    width: 88%; } }
