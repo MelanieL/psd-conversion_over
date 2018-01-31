@@ -1047,7 +1047,7 @@ header .fa {
   flex-direction: column; }
 
 .blog h2 {
-  margin: 60px 0px 0px 0px; }
+  margin: 110px 0px 0px 0px; }
 
 .blog .popular__titleunderlinesdiv {
   padding-top: 25px; }
@@ -1126,6 +1126,7 @@ header .fa {
   -ms-flex-pack: justify;
   justify-content: space-between;
   padding-top: 40px;
+  padding-bottom: 40px;
   width: 100%; }
 
 .signup__locationimgscont img {
