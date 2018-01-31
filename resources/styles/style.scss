@@ -13,6 +13,7 @@ header,
 .welcome,
 .categories,
 .popular,
+.quote,
 .blog,
 .signup,
 .contact,
@@ -45,6 +46,7 @@ footer {
 header  {
     align-items: center;
     background: #ffffff;
+    border-bottom: .5px solid $secondary;
     flex-direction: row;
     justify-content: center;
     min-height: 100px;
@@ -58,16 +60,10 @@ header ul   {
 
 .header__leftnav    {
     margin-right: 7%;
-    width: 28%;
 }
 
 .header__leftnav a   {
     padding: 0px 20px;
-}
-
-.logoimgdiv {
-    margin-right: 16%;
-    width: 9%;
 }
 
 header svg  {
@@ -75,26 +71,24 @@ header svg  {
 }
 
 .header__rightnav   {
+    margin-left: 16%;
     margin-right: 4%;
+    position: relative;
 }
 
 .header__notecircle {
     background: $quaternary;
+    bottom: 40%;
     border-radius: 50px;
     height: 20px;
+    left: 18%;
     position: absolute;
-    right: 24%;
-    top: 30%;
     width: 20px;
 }
 
 .header__notecircle p   {
     margin: 0;
 }
-
-.header__rightnav__bagicondiv   {
-    position: relative;
-}    
 
 .header__rightnav__bagicon  {
     height: 25px;
@@ -359,7 +353,10 @@ header .fa     {
     justify-content: space-between;
     margin-bottom: 40px;
     padding: 0px;
-    width: 30%;
+}
+
+.popular__nav a {
+    padding: 0px 15px;
 }
 
 .popular__nav a:hover   {
@@ -383,11 +380,11 @@ header .fa     {
 .popular__hotbut,
 .popular__newbut,
 .popular__twentyoffbut  {
-    border-radius: 5px;
+    border-radius: 50px;
     color: $tertiary;
-    font-size: 10px;
+    font-size: 11px;
     height: 20px;
-    left: 75%;
+    right: 4%;
     margin: 0.5%;
     position: absolute;
     top: 2%;
@@ -466,14 +463,12 @@ header .fa     {
 .quote__leftbox {
     background-image: url(../images/image_quoteleftbackground.jpg);
     background-size: cover;
-    float: left;
     width: 50%;
 }
 
 .quote__rightbox    {
     background-image: url(../images/image_videoplaceholder.jpg);
     background-size: cover;
-    float: right;
     width: 50%;
 }
 
@@ -525,26 +520,29 @@ header .fa     {
 .quote__rightbox__txt   {
     margin: 0 auto;
     text-align: center;
-    width: 60%;
 }
 
 .quote h1,
 .quote__rightbox__planticondiv   {
     display: inline-block;
+    line-height: 0;
     margin: 0;
-    width: 30%;
 }
 
 .quote__rightbox__planticondiv  {
     padding-top: 10px;
 }
 
+.quote__rightbox__planticondiv img  {
+    width: 100%;
+}
+
 .quote h5   {
     color: $tertiary;
     font-size: 16px;
     font-weight: 400;
+    letter-spacing: 4px;
     margin-top: 0;
-    padding-bottom: 117.4px;
 }
 
 .quote__rightbox__mediabut img  {
@@ -571,17 +569,13 @@ header .fa     {
 }
 
 .blog img   {
-    height: 30vh;
+    height: 100%;
     width: 100%;
 }
 
 .blog__articlebox__articlecont  {
     display: flex;
     justify-content: space-between;
-}
-
-.blog__articlebox__imgdiv   {
-    height: 30vh;
 }
 
 .blog p  {
@@ -662,12 +656,12 @@ header .fa     {
 
 .contact__leftboxcont   {
     display: flex;
-    padding-top: 100px;
+    padding-top: 65px;
     width: 60%;
 }
 
 .contact__leftbox {
-    padding: 9px 0px 50px 0px;
+    padding: 9px 0px 65px 0px;
     width: 70%;
 }
 
@@ -708,16 +702,16 @@ header .fa     {
 
 .contact__lcbox h3::after   {
     bottom: 0px;
-    right: 126px;
+    left: 0px;
 }
 
 .contact__rcbox h3::after   {
     bottom: 0px;
-    right: 120px;
+    left: 0px;
 }
 
 .contact__rightbox h3::after   {
-    right: 230px;
+    left: 0px;
     top: 30px;
 }
 
@@ -731,7 +725,7 @@ header .fa     {
 
 .contact__rcbox,
 .contact__rightboxcont {
-    padding-top: 100px;
+    padding-top: 65px;
 }
 
 .contact__rcbox {
@@ -778,7 +772,8 @@ header .fa     {
 
 footer  {
     justify-content: center;
-    margin-bottom: 40px;
+    margin-bottom: 60px;
+    margin-top: 20px;
 }
 
 footer .wrapper {
@@ -789,17 +784,283 @@ footer .footer__dark   {
     color: $primary;
 }
 
+// This is the first place where the site breaks
 
+@media (max-width: 1180px)  {
+    .header__rightnav   {
+        margin-left: 4%;
+    }
+}
+
+@media (max-width: 1059px)  {
+    .categories__label__airplt h3,
+    .categories__label__offplt h3, 
+    .categories__label__houpl h3, 
+    .categories__label__pltcont h3 {
+        font-size: 16px;
+    }
+
+    .contact h3 {
+        font-size: 14px;
+    }
+    
+    .contact__rightbox h3   {
+        margin-top: 3px;
+        padding-bottom: 4px;
+    }
+    
+    .contact__rightbox h3::after   {
+        top: 12px;
+    }
+    
+    .contact__pmbox {
+        flex-wrap: wrap;
+    }
+}
 
 /* Portrait tablet and small desktops */
-@media (max-width: 1050px) {
+@media (max-width: 1014px) {
 
+    .hero__navindicatordiv {
+	margin-top: 5%;
+    }
+
+    .quote__leftbox h2 {
+        font-size: 24px;
+    }
+
+    .quote__rightbox__txt h1    {
+        font-size: 70px;
+    }
+
+    .quote__rightbox__txt h5    {
+        font-size: 12px; 
+    }
+    
+    .quote__rightbox__planticondiv  {
+        width: 20%;
+    }
+
+    .quote__rightbox__mediabut  {
+        margin-left: 25px;
+    }
+
+    .categories__label__airplt h3,
+    .categories__label__offplt h3, 
+    .categories__label__houpl h3, 
+    .categories__label__pltcont h3 {
+        font-size: 12px;
+    }
+
+    .categories p   {
+        font-size: 12px;
+    }
+
+    .contact__lcbox a,
+    .contact__rcbox a   {
+        border-bottom: .5px solid $secondary;
+    }
+
+    .contact__lcbox a:last-of-type,
+    .contact__rcbox a:last-of-type   {
+        border-bottom: none;
+    }
+
+    footer p    {
+        font-size: 10px;
+    }
+}
+
+@media (max-width: 805px)   {
+    .header__leftnav    {
+        margin-right: 2%;
+    }
+
+    .logoimgdiv     {
+        width: 10%;
+    }
+
+    .header__rightnav   {
+        margin-left: 2%;
+    }
+    
+    .popular__prodboxcont   {
+        justify-content: space-around;
+        width: unset;
+    }
+    
+    .popular__prodbox  {
+        width: unset;
+    }
+
+    .signup__locationimgdiv {
+        width: 15%;
+    }
 }
 
 /* Landscape phone to portrait tablet */
-@media (max-width: 768px) {
+@media (max-width: 660px) {
+    .header__rightnav__bagicon {
+        height: 25px;
+        margin: 0px 10px 0px 0px;
+        width: 18px;
+    }
+
+    .header__notecircle {
+	left: 10%;
+    }
+    
+    .hero__navindicatordiv  {
+        display: none;
+    }
+
+    .hero__centercontent h2     {
+        font-size: 22px;
+    }
+
+    .hero__centercontent h1     {
+        font-size: 46px;
+    }
+
+    .contact .wrapper   {
+        flex-wrap: wrap;
+    }
+
+    .contact__leftboxcont  {
+        width: 100%;
+    }
+
+    .contact__rcbox     {
+        width: 38%;
+    }
+
+    .contact__rightboxcont  {
+        width: 55%;
+    }
+
+    .quote  {
+        flex-wrap: wrap;
+    }
+
+    .quote__leftbox,
+    .quote__rightbox    {
+        width: 100%;
+    }
+
+    .quote__rightbox__mediabut  {
+        padding-top: unset;
+    }
+
+    .quote__rightbox  {
+        padding: 50px 0px;
+    }
+
+    .contact__lcbox {
+	padding: 15px 0px 0px 10px;
+}
+
 }
 
 /* Landscape phones and down */
 @media (max-width: 480px) {
-}
+
+    header  {
+        flex-direction: row;
+        flex-wrap: wrap;
+        min-height: unset;
+    }
+
+    .header__leftnav    {
+        order: 3;
+        padding-bottom: 10px;
+    }
+
+    .logoimgdiv     {
+        margin: 20px;
+        width: 36%;
+    }
+
+    .header__rightnav   {
+        width: 28%;
+    }
+
+    .header__notecircle {
+        left: 20%;
+    }
+
+    .header__rightnav a:first-of-type {
+        padding-left: 15px;
+    }
+
+    .hero h2 {
+    	margin-top: 130px;
+    }
+
+    .categories .wrapper {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .categories__airpltdiv,
+    .categories__rightdivs__offpltdiv,
+    .categories__rightdivs__houpltdiv,
+    .categories__rightdivs__pltcontdiv  {
+        margin: 10px 0px;
+    }
+
+    .categories__label__offplt,
+    .categories__label__houpl {
+        top: 39%;
+        left: 28%;
+        width: 45%;
+    }
+
+    .blog__articlebox__articlecont {
+        flex-direction: column;
+    }
+
+    .blog__articlebox   {
+        margin: 30px 0px;
+        width: 100%;
+    }
+
+    .signup__emailbox {
+        padding-top: 30px;
+    	width: 96%;
+    }
+
+    .signup form {
+        flex-direction: row;
+        height: 30px;
+    }
+
+    .signup form p {
+        padding: 0;
+        margin: 0;
+    	width: 43%;
+    }
+
+    .signup input {
+        width: 67%;
+        padding: 0 0 10px 5px;
+    }
+
+    .button   {
+    	padding-bottom: 15px;
+    }
+
+    .wrapper {
+	    justify-content: center;
+    }
+
+    .contact__rcbox {
+        width: 37%;
+    }
+
+    .contact__rightboxcont {
+        width: 50%;
+    }
+
+
+    }
+

@@ -97,6 +97,10 @@ header a:hover  {
     font-weight: 400;
 }
 
+.quote h1   {
+    font-size: 98px;
+}
+
 .signup form p  {
     color: $secondary;
     font-size: 14px;
@@ -104,6 +108,10 @@ header a:hover  {
 
 .contact a:hover {
     color: $quaternary;
+}
+
+.leftbox__email  {
+    color: $secondary;
 }
 
 footer  {
