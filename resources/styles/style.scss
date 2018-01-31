@@ -84,7 +84,22 @@ header svg  {
     left: 18%;
     position: absolute;
     width: 20px;
+    animation: note 1s linear infinite;
 }
+
+@keyframes note {
+    0% {
+        top: 0;
+    }
+
+    50% {
+        top: -20%;
+    }
+
+    100% {
+        top: 0;
+    }
+}  
 
 .header__notecircle p   {
     margin: 0;

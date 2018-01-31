@@ -583,7 +583,25 @@ header svg {
   height: 20px;
   left: 18%;
   position: absolute;
-  width: 20px; }
+  width: 20px;
+  -webkit-animation: note 1s linear infinite;
+  animation: note 1s linear infinite; }
+
+@-webkit-keyframes note {
+  0% {
+    top: 0; }
+  50% {
+    top: -20%; }
+  100% {
+    top: 0; } }
+
+@keyframes note {
+  0% {
+    top: 0; }
+  50% {
+    top: -20%; }
+  100% {
+    top: 0; } }
 
 .header__notecircle p {
   margin: 0; }
