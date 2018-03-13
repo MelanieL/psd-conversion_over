@@ -1,35 +1,27 @@
-//Make the partial
-//Save the partial
-//Delete the partial
-//Import the partial
-//Save style.scss
-
 // Font variables
 $font-stack: 'Poppins', sans-serif;
-
-// 
 $bold-weight-bold: 500;
 
+
 //Colour variables
+
 $primary: #292935;
+
+// This is the call to action hover colour
 $secondary: #96969D;
+
 $tertiary: #ffffff;
+
 $quaternary: #79DAD6;
+$quaternary-adjusted:  rgb(96, 168, 166);
+
+// This is the call-to-action colour
 $quinary: #FF9A9E;
+
 $senary: #F6B895;
 
-//Base styles
+$line-colour: #e7e7e7;
 
-body    {
-    width: 100%;
+input:focus {
+    outline:none;
 }
-
-.wrapper    {
-    display: flex;
-    width: 80%;  
-}
-
-ul  {
-    list-style: none;
-}
-

@@ -46,6 +46,15 @@ a   {
     text-decoration: none;
 }
 
+header a {
+    font-size: 18px;
+}
+
+a:hover,
+a:active {
+    color: $quinary;
+}
+
 p   {
     font-size: 14px;
     text-align: center;
@@ -64,16 +73,8 @@ p   {
     font-family: "PressStyle";
 }
 
-header a    {
-    color: $primary;
-}
-
-header a:hover  {
-    color: $secondary;
-}
-
 .welcome h4 {
-    color: $quaternary;
+    color: $quaternary-adjusted;
 }
 
 .welcome p:first-of-type  {
@@ -104,10 +105,6 @@ header a:hover  {
 .signup form p  {
     color: $secondary;
     font-size: 14px;
-}
-
-.contact a:hover {
-    color: $quaternary;
 }
 
 .leftbox__email  {

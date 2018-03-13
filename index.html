@@ -23,13 +23,9 @@
     <meta name="msapplication-square150x150logo" content="resources/images/mediumtile.png" />
     <meta name="msapplication-wide310x150logo" content="resources/images/widetile.png" />
     <meta name="msapplication-square310x310logo" content="resources/images/largetile.png" />
-    <script src='https://use.fontawesome.com/ca28529f02.js'></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Poppins:400,400i,500,600,700" rel="stylesheet">
     <link rel="stylesheet" type="text/css" href="resources/styles/style.css">
-    <!-- Flickity test begins -->
-    <link rel="stylesheet" href="/path/to/flickity.css" media="screen">
-    <!-- Flickity test ends -->
-</head>
 
 <body>
 
@@ -51,12 +47,11 @@
             </svg>
         </div>
         <nav class="header__rightnav">
-            <div class="header__notecircle">
-                <p>2</p>
-            </div>
-            <a href="">
-                <div="header__rightnav__bagicondiv">
-                    <?xml version="1.0" encoding="utf-8"?>
+            <a class="header__notecircle__rel" href="link.html">
+                <div class="header__notecircle">
+                    <p>2</p>
+                </div>  
+                <div="header__rightnav__bagicondiv">                    <!-- <?xml version="1.0" encoding="utf-8"?> -->
                     <svg class="header__rightnav__bagicon" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="18px" height="24px" viewBox="0 0 18 24">
                         <g>
                             <path d="M 1.5 24C 1.5 24 16.5 24 16.5 24 17.33 24 18 23.33 18 22.5 18 22.5 18 6 18 6 18 5.17 17.33 4.5 16.5 4.5 16.5 4.5 13.49 4.5 13.49 4.5 13.46 2.01 11.46-0 9-0 6.54-0 4.54 2.01 4.51 4.5 4.51 4.5 1.5 4.5 1.5 4.5 0.67 4.5-0 5.17-0 6-0 6-0 22.5-0 22.5-0 23.33 0.67 24 1.5 24ZM 16.5 6C 16.5 6 16.5 22.5 16.5 22.5 16.5 22.5 1.5 22.5 1.5 22.5 1.5 22.5 1.5 6 1.5 6 1.5 6 16.5 6 16.5 6ZM 9 1.5C 10.63 1.5 11.96 2.84 11.99 4.5 11.99 4.5 6.01 4.5 6.01 4.5 6.04 2.84 7.37 1.5 9 1.5ZM 6.75 9C 6.75 9 11.25 9 11.25 9 11.66 9 12 8.66 12 8.25 12 7.84 11.66 7.5 11.25 7.5 11.25 7.5 6.75 7.5 6.75 7.5 6.34 7.5 6 7.84 6 8.25 6 8.66 6.34 9 6.75 9Z" />
@@ -64,27 +59,18 @@
                     </svg>
                 </div>
             </a>
-                <a href=""><i class="fa fa-search" aria-hidden="true"></i></a>
-                <a href=""><i class="fa fa-bars" aria-hidden="true"></i></a>
+            <a href="link.html"><i class="fa fa-search" aria-hidden="true"></i></a>
+            <a href="link.html"><i class="fa fa-bars" aria-hidden="true"></i></a>
         </nav>
     </header>
 
     <section class="hero" id="home">
         <div class="hero__navbutleftdiv">
-            <a href="hero__navbutleft">
-                <?xml version="1.0" encoding="utf-8"?>
-                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="24px" viewBox="0 0 35 24">
-                    <filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filter0">
-                        <feFlood flood-color="rgb(25,25,37)" result="coFloodOut1" />
-                        <feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1" />
-                        <feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1" />
-                    </filter>
-                    <image x="0" y="0" width="35" height="24" filter="url(#filter0)" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACMAAAAYCAQAAADabYy8AAAABGdBTUEAALGPC/xhBQAAACBjSFJNAAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAAmJLR0QA/4ePzL8AAADaSURBVDjLrdWxLsNRFAfg799SVESaCJGwehDvxOQpDGIQAwkxSNOkohIMBgsxVCKegkc4hvaaLO7pufuXe07u/R3+qo4LX3alasFQCHsZpGskhFtLGeRRCAOdemTFkxCuM8iqZyFcmqtHel6EcKZdj6x5E8JJBlk3FsKRph7Z9CGEw3qkseXBDkYOqi/yadpO7oxbWvXT+K1obLufRVMzGfGkNrwL4TgLled3mnl+0PMqhPMsVL7mlfkcVIKinwkKWJ7G1o3FHFRC9E43B5VI388xkwXz/Z8F8wPSDGu46g6oUwAAACV0RVh0ZGF0ZTpjcmVhdGUAMjAxOC0wMS0yNlQyMTo1NjoyNiswMDowMPIx894AAAAldEVYdGRhdGU6bW9kaWZ5ADIwMTgtMDEtMjZUMjE6NTY6MjYrMDA6MDCDbEtiAAAAAElFTkSuQmCC"
-                    />
-                </svg>
+            <a href="link.html">
+                <i class="fas fa-arrow-left fa-2x"></i>
             </a>
         </div>
-        <div class="hero__centercontent">
+        <div class="hero__centercontent"> -->
             <h2>Over Collections 2017</h2>
             <h1>Living & Styling With Plants</h1>
             <div class="hero__shopnowbut">
@@ -98,19 +84,8 @@
             </div>
         </div>
         <div class="hero__navbutrightdiv">
-            <a href="">
-                <?xml version="1.0" encoding="utf-8"?>
-                    <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="35px" height="24px" viewBox="0 0 35 24">
-                    <filter filterUnits="objectBoundingBox" x="0.00" y="0.00" width="100.00" height="100.00" id="filter0">
-                    <feFlood flood-color="rgb(135,135,143)" result="coFloodOut1" />
-                    <feComposite in="coFloodOut1" in2="SourceAlpha" operator="in" result="coOverlay1" />
-                    <feBlend in="coOverlay1" in2="SourceGraphic" mode="normal" result="colorOverlay1" />
-                    </filter>
-                <g filter="url(#filter0)">
-                <path fillRule="evenodd" d="M 23.57 0.36C 23.09-0.12 22.3-0.12 21.8 0.36 21.33 0.83 21.33 1.6 21.8 2.06 21.8 2.06 30.75 10.79 30.75 10.79 30.75 10.79 1.23 10.79 1.23 10.79 0.55 10.79-0 11.32-0 11.99-0 12.66 0.55 13.21 1.23 13.21 1.23 13.21 30.75 13.21 30.75 13.21 30.75 13.21 21.8 21.92 21.8 21.92 21.33 22.4 21.33 23.18 21.8 23.64 22.3 24.12 23.09 24.12 23.57 23.64 23.57 23.64 34.63 12.85 34.63 12.85 35.12 12.39 35.12 11.61 34.63 11.15 34.63 11.15 23.57 0.36 23.57 0.36Z"
-                fill="rgb(0,0,0)" />
-                </g>
-                </svg>
+            <a href="link.html">
+                <i class="fas fa-arrow-right fa-2x"></i>
             </a>
         </div>
     </section>
@@ -131,7 +106,7 @@
         <div class="wrapper">
             <div class="categories__airpltdiv">
                 <img src="resources/images/image_airplants.jpg" alt="image of a spiky plant">
-                <a href="">
+                <a href="link.html">
                     <div class="categories__label__airplt">
                         <h3>Air Plants</h3>
                         <p>12 items</p>
@@ -140,7 +115,7 @@
             </div>
                 <div class="categories__rightdivs__offpltdiv">
                     <img src="resources/images/image_officeplants.jpg" alt="image of a hanging plant">
-                    <a href="">
+                    <a href="link.html">
                         <div class="categories__label__offplt">
                             <h3>Office Plants</h3>
                             <p>38 items</p>
@@ -149,7 +124,7 @@
                 </div>
                 <div class="categories__rightdivs__houpltdiv">
                     <img src="resources/images/image_houseplants.jpg" alt="image of a terrarium plant">
-                    <a href="">
+                    <a href="link.html">
                         <div class="categories__label__houpl">
                             <h3>House Plants</h3>
                             <p>21 items</p>
@@ -158,19 +133,17 @@
                 </div>
                 <div class="categories__rightdivs__pltcontdiv">
                     <img src="resources/images/image_plantcontainers.jpg" alt="image of a plant container with several plants">
-                    <a href="">
+                    <a href="link.html">
                         <div class="categories__label__pltcont">
                             <h3>Plant Containers</h3>
                             <p>07 items</p>
                         </div>
                     </a>
-                    <!-- This span is to control where the anchor lands because of the fixed header -->
-                    <span id="shop"></span>
                 </div>
         </div>
     </section>
 
-    <section class="popular">
+    <section class="popular" id="shop">
         <div class="wrapper">
             <h2>Popular Products</h2>
             <div class="popular__titleunderlinesdiv">
@@ -179,9 +152,9 @@
                 <div class="popular__titleunderliner"></div>
             </div>
             <nav class="popular__nav">
-                <a href="">New Arrivals</a>
-                <a href="">Best Seller</a>
-                <a href="">Features</a>
+                <a href="link.html">New Arrivals</a>
+                <a href="link.html">Best Seller</a>
+                <a href="link.html">Features</a>
             </nav>
             <div class="popular__prodboxcont">
 
@@ -194,14 +167,14 @@
                     </div>
                     <div class="popular__prodimgdiv">
                         <div class="popular__prodimgdiv-hover">
-                            <a href="">ADD TO CART</a>
+                            <a href="link.html">ADD TO CART</a>
                         </div>
                         <img src="resources/images/image_pop1.jpg" alt="image of some cactuses">
                     </div>
                     <div class="popular__prodpricing">
                         <p class="popular__description">Pebbled backpack</p>
                         <p class="popular__price">$99.00</p>
-                        <a href="">
+                        <a href="link.html">
                             <i class='fa fa-cart-plus' aria-hidden='true'></i>
                         </a>
                     </div>
@@ -213,14 +186,14 @@
                     </div>
                     <div class="popular__prodimgdiv">
                         <div class="popular__prodimgdiv-hover">
-                            <a href="">ADD TO CART</a>
+                            <a href="link.html">ADD TO CART</a>
                         </div>                   
                         <img src="resources/images/image_pop2.jpg" alt="image of a single plant in a white pot">
                     </div>
                     <div class="popular__prodpricing">
                         <p class="popular__description">Flower print dress</p>
                         <p class="popular__price">$52.00</p>
-                        <a href="">
+                        <a href="link.html">
                             <i class='fa fa-cart-plus' aria-hidden='true'></i>
                         </a>
                     </div>
@@ -232,14 +205,14 @@
                     </div>
                     <div class="popular__prodimgdiv">
                         <div class="popular__prodimgdiv-hover">
-                            <a href="">ADD TO CART</a>
+                            <a href="link.html">ADD TO CART</a>
                         </div>
                         <img src="resources/images/image_pop3.jpg" alt="image of a glass terrarium with an air plant">
                     </div>
                     <div class="popular__prodpricing">
                         <p class="popular__description">Printed cotton t-shirt</p>
                         <p class="popular__price">$56.00 <span class="regprice">$79.00</span></p>
-                        <a href="">
+                        <a href="link.html">
                             <i class='fa fa-cart-plus' aria-hidden='true'></i>
                         </a>                        
                     </div>
@@ -248,14 +221,14 @@
                 <div class="popular__prodbox">
                     <div class="popular__prodimgdiv">
                         <div class="popular__prodimgdiv-hover">
-                            <a href="">ADD TO CART</a>
+                            <a href="link.html">ADD TO CART</a>
                         </div>
                         <img src="resources/images/image_pop4.jpg" alt="image of a white vase with a long branch plant">
                     </div>
                     <div class="popular__prodpricing">
                         <p class="popular__description">Slim-fit cotton T-shirt</p>
                         <p class="popular__price">$77.00</p>
-                        <a href="">
+                        <a href="link.html">
                             <i class='fa fa-cart-plus' aria-hidden='true'></i>
                         </a>                        
                     </div>
@@ -267,14 +240,14 @@
                     </div>
                     <div class="popular__prodimgdiv">
                         <div class="popular__prodimgdiv-hover">
-                            <a href="">ADD TO CART</a>
+                            <a href="link.html">ADD TO CART</a>
                         </div>
                         <img src="resources/images/image_pop5.jpg" alt="image of a single plant in a small white pot">
                     </div>
                     <div class="popular__prodpricing">
                         <p class="popular__description">Zip leather jacket</p>
                         <p class="popular__price">$178.00<span class="regprice">$199.00</span></p>
-                        <a href="">
+                        <a href="link.html">
                             <i class='fa fa-cart-plus' aria-hidden='true'></i>
                         </a>                        
                     </div>
@@ -283,14 +256,14 @@
                 <div class="popular__prodbox">
                     <div class="popular__prodimgdiv">
                         <div class="popular__prodimgdiv-hover">
-                            <a href="">ADD TO CART</a>
+                            <a href="link.html">ADD TO CART</a>
                         </div>
                         <img src="resources/images/image_pop6.jpg" alt="image of a hanging plant">
                     </div>
                     <div class="popular__prodpricing">
                         <p class="popular__description">Flower print dress</p>
                         <p class="popular__price">$98.00</p>
-                        <a href="">
+                        <a href="link.html">
                             <i class='fa fa-cart-plus' aria-hidden='true'></i>
                         </a>                        
                     </div>
@@ -302,14 +275,14 @@
                     </div>
                     <div class="popular__prodimgdiv">
                         <div class="popular__prodimgdiv-hover">
-                            <a href="">ADD TO CART</a>
+                            <a href="link.html">ADD TO CART</a>
                         </div>
                         <img src="resources/images/image_pop7.jpg" alt="image of a leafy plant in a clear vase with water">
                     </div>
                     <div class="popular__prodpricing">
                         <p class="popular__description">Combined weekend bag</p>
                         <p class="popular__price">$88.00</p>
-                        <a href="">
+                        <a href="link.html">
                             <i class='fa fa-cart-plus' aria-hidden='true'></i>
                         </a>                        
                     </div>
@@ -321,14 +294,14 @@
                     </div>
                     <div class="popular__prodimgdiv">
                         <div class="popular__prodimgdiv-hover">
-                            <a href="">ADD TO CART</a>
+                            <a href="link.html">ADD TO CART</a>
                         </div>
                         <img src="resources/images/image_pop8.jpg" alt="image of a spiky succulent">
                     </div>
                     <div class="popular__prodpricing">
                         <p class="popular__description">Tortoiseshell retro sunglasses</p>
                         <p class="popular__price">$56.00<span class="regprice">$79.00</span></p>
-                        <a href="">
+                        <a href="link.html">
                             <i class='fa fa-cart-plus' aria-hidden='true'></i>
                         </a>                        
                     </div>
@@ -337,14 +310,14 @@
                 <div class="popular__prodbox">
                     <div class="popular__prodimgdiv">
                         <div class="popular__prodimgdiv-hover">
-                            <a href="">ADD TO CART</a>
+                            <a href="link.html">ADD TO CART</a>
                         </div>
                         <img src="resources/images/image_pop9.jpg" alt="image of the petals only of a branchy flower">
                     </div>
                     <div class="popular__prodpricing">
                         <p class="popular__description">Slim-fit Patrick jeans</p>
                         <p class="popular__price">$88.00</p>
-                        <a href="">
+                        <a href="link.html">
                             <i class='fa fa-cart-plus' aria-hidden='true'></i>
                         </a>                        
                     </div>
@@ -353,14 +326,14 @@
                 <div class="popular__prodbox">
                     <div class="popular__prodimgdiv">
                         <div class="popular__prodimgdiv-hover">
-                            <a href="">ADD TO CART</a>
+                            <a href="link.html">ADD TO CART</a>
                         </div>
                         <img src="resources/images/image_pop10.jpg" alt="image of a short succulent with wide spike leaves">
                     </div>
                     <div class="popular__prodpricing">
                         <p class="popular__description">Embroidered message cap</p>
                         <p class="popular__price">$178.00<span class="regprice">$199.00</span></p>
-                        <a href="">
+                        <a href="link.html">
                             <i class='fa fa-cart-plus' aria-hidden='true'></i>
                         </a>                        
                     </div>
@@ -378,15 +351,15 @@
             <p class="italic">Duis mollis, est non commando luctus, nisi erat liguia, eget lacinia adio sem nec elit.  Fusce dapibus, telius ac cursus commodo, tortor mauris condimentum nibh, ut fermentum massa justo sit amet risus.</p>
             <p><span class="author">ROSINANTE BROOK . WEB DESIGN</span></p>
             <div class="quote__leftbox__popcirclediv">
-                <a href=""><div class="quote__leftbox__popcircles"></div></a>
-                <a href=""><div class="quote__leftbox__popcircles"></div></a>
-                <a href=""><div class="quote__leftbox__popcircles"></div></a>
-                <a href=""><div class="quote__leftbox__popcircles"></div></a>
+                <div class="quote__leftbox__popcircles"></div>
+                <div class="quote__leftbox__popcircles"></div>
+                <div class="quote__leftbox__popcircles"></div>
+                <div class="quote__leftbox__popcircles"></div>
             </div>
         </div>
         <div class="quote__rightbox">
             <div class="quote__rightbox__mediabut">
-                <a href=""><img src="resources/images/icon_play.png" alt="play button for video"></a>
+                <a href="link.html"><img src="resources/images/icon_play.png" alt="play button for video"></a>
             </div>
             <div class="quote__rightbox__txt">
                 <h1 class="font__pressstyle">PLANTS</h1>
@@ -413,9 +386,11 @@
                         <img src="resources/images/image_fishnets1.jpg" alt="image of a wildflower">
                     </div>
                     <div class="blog__articlebox__text">
-                        <p>December 14, 2017</p>
-                        <p class="bold">How To Wear Fishnets Like a Street Style Superstar</p>
-                        <a href="">Read More</a>
+                        <p class="blog__date">December 14, 2017</p>
+                        <a href="link.html">
+                            <p class="bold">How To Wear Fishnets Like a Street Style Superstar</p>
+                            <p class="read_more">Read More</p>
+                        </a>
                     </div>
                 </div>
                 <div class="blog__articlebox">
@@ -423,9 +398,11 @@
                         <img src="resources/images/image_fishnets2.jpg" alt="image of a leafy plant in a clear vase with water">
                     </div>
                     <div class="blog__articlebox__text">
-                        <p>December 14, 2017</p>
-                        <p class="bold">How To Wear Fishnets Like a Street Style Superstar</p>
-                        <a href="">Read More</a>
+                        <p class="blog__date">December 14, 2017</p>
+                        <a href="link.html">
+                            <p class="bold">How To Wear Fishnets Like a Street Style Superstar</p>
+                            <p class="read_more">Read More</p>
+                        </a>
                     </div>
                 </div>
                 <div class="blog__articlebox">
@@ -433,9 +410,11 @@
                         <img src="resources/images/image_fishnets3.jpg" alt="image of a table with a plant and a frame with art in it">
                     </div>
                     <div class="blog__articlebox__text">
-                        <p>December 14, 2017</p>
-                        <p class="bold">How To Wear Fishnets Like a Street Style Superstar</p>
-                        <a href="">Read More</a>
+                        <p class="blog__date">December 14, 2017</p>
+                        <a href="link.html">
+                            <p class="bold">How To Wear Fishnets Like a Street Style Superstar</p>
+                            <p class="read_more">Read More</p>
+                        </a>
                     </div>
                 </div>
             </div>
@@ -453,8 +432,7 @@
             <p>Cras justo odio, dapibus ac facilisis in, egestras eget quam. Aenean eu leo quam.  Pellentesque amare sem lacinia quam venenatis vstibulum.</p>
             <div class="signup__emailbox">
                 <form action="">
-                    <p>Enter your email</p>
-                    <input type="text" name="firstname" value="">
+                    <input type="text" name="firstname" placeholder="Enter your email" required>
                     <button>
                         <i class="fa fa-envelope-o" aria-hidden="true"></i>
                     </button>
@@ -499,53 +477,53 @@
                     <p><span class="bold">Email </span> : <a href="" class="leftbox__email">creativewithjoy@gmail.com</a></p>
                     <p><span class="bold">Skype </span> : doodlelys</p>
                     <div class="contact__smedbox">
-                        <a href=""><i class='fa fa-facebook' aria-hidden='true'></i></a>
-                        <a href=""><i class='fa fa-twitter' aria-hidden='true'></i></a>
-                        <a href=""><i class='fa fa-google-plus' aria-hidden='true'></i></a>
-                        <a href=""><i class='fa fa-instagram' aria-hidden='true'></i></a>
-                        <a href=""><i class='fa fa-pinterest' aria-hidden='true'></i></a>
+                        <a href="link.html"><i class="fab fa-facebook fa-2x"></i></a>
+                        <a href="link.html"><i class="fab fa-twitter-square fa-2x"></i></a>
+                        <a href="link.html"><i class='fab fa-google-plus-square fa-2x'></i></a>
+                        <a href="link.html"><i class='fab fa-instagram fa-2x'></i></a>
+                        <a href="link.html"><i class='fab fa-pinterest-square fa-2x'></i></a>
                     </div>
                 </div>
                 <div class="contact__lcbox">
                     <h3>Services</h3>
-                    <a href="">International Shipping</a>
-                    <a href="">Term & Conditions</a>
-                    <a href="">Orders & Returns</a>
-                    <a href="">Shipping Rates & Policies</a>
-                    <a href="">FAQs</a>
-                    <a href="">Contact</a>
+                    <a href="link.html">International Shipping</a>
+                    <a href="link.html">Term & Conditions</a>
+                    <a href="link.html">Orders & Returns</a>
+                    <a href="link.html">Shipping Rates & Policies</a>
+                    <a href="link.html">FAQs</a>
+                    <a href="link.html">Contact</a>
                 </div>
             </div>
             <div class="contact__rcbox">
                 <h3>Your Account</h3>
-                <a href="">Your Order</a>
-                <a href="">Your Wishlist</a>
-                <a href="">Payment Method</a>
-                <a href="">Newsletter</a>
-                <a href="">About Us</a>
-                <a href="">Privacy Policy</a>
+                <a href="link.html">Your Order</a>
+                <a href="link.html">Your Wishlist</a>
+                <a href="link.html">Payment Method</a>
+                <a href="link.html">Newsletter</a>
+                <a href="link.html">About Us</a>
+                <a href="link.html">Privacy Policy</a>
             </div>
             <div class="contact__rightboxcont">
                 <div class="contact__rightbox">
                     <h3>Instagram</h3>
                     <div class="contact__rightbox__gallery">
                         <div class="contac__rightbox__instagalleryimgdiv">
-                            <a href=""><img src="resources/images/image_insta1.jpg" alt="image of a plant in a white pot"></a>
+                            <a href="link.html"><img class="overlay" src="resources/images/image_insta1.jpg" alt="image of a plant in a white pot"></a>
                         </div>
                         <div class="contac__rightbox__instagalleryimgdiv">
-                            <a href=""><img src="resources/images/image_insta2.jpg" alt="image of a spike plant in a white planter"></a>
+                            <a href="link.html"><img class="overlay" src="resources/images/image_insta2.jpg" alt="image of a spike plant in a white planter"></a>
                         </div>
                         <div class="contac__rightbox__instagalleryimgdiv">
-                            <a href=""><img src="resources/images/image_insta3.jpg" alt="image of a branch plant in a white vase"></a>
+                            <a href="link.html"><img class="overlay" src="resources/images/image_insta3.jpg" alt="image of a branch plant in a white vase"></a>
                         </div>
                         <div class="contac__rightbox__instagalleryimgdiv">
-                            <a href=""><img src="resources/images/image_insta4.jpg" alt="image of a branchy plant in a clear vase with water"></a>
+                            <a href="link.html"><img class="overlay" src="resources/images/image_insta4.jpg" alt="image of a branchy plant in a clear vase with water"></a>
                         </div>
                         <div class="contac__rightbox__instagalleryimgdiv">
-                            <a href=""><img src="resources/images/image_insta5.jpg" alt="image of a spiky succulent"></a>
+                            <a href="link.html"><img class="overlay" src="resources/images/image_insta5.jpg" alt="image of a spiky succulent"></a>
                         </div>
                         <div class="contac__rightbox__instagalleryimgdiv">
-                            <a href=""><img src="resources/images/image_insta6.jpg" alt="image of a plant in a pot on a table in front of a frame with art"></a>
+                            <a href="link.html"><img class="overlay"src="resources/images/image_insta6.jpg" alt="image of a plant in a pot on a table in front of a frame with art"></a>
                         </div>
                     </div>
                 </div>
@@ -647,7 +625,7 @@
     <footer>
         <div class="wrapper">
             <div class="footer__left">
-                <p>&copy; OVER . All Rights Reserved . Design by <span class="footer__dark">Creativewithjoy</span></p>
+                <p>&copy; OVER . All Rights Reserved . Design by <span class="footer__dark"> <a href="link.html" target="_blank">Creativewithjoy</a></span></p>
             </div>
             <div class="footer__right">
                 <p>Any question? Let us help you.  Call us: <span class="footer__dark">+ (1200) 989 169 092</span></p>
@@ -655,10 +633,13 @@
         </div>
     </footer>
 
-<!-- Flickity test begins -->
-<script src="/path/to/flickity.pkgd.min.js"></script>
-<!-- Flickity test ends -->
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.1.2/jquery.smooth-scroll.min.js"></script>
+    <script>
+        $(function () {
+            $('a').smoothScroll();
+        });
+    </script>
 </body>
 
 </html>
