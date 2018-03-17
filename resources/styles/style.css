@@ -1475,10 +1475,8 @@ footer .footer__dark {
     width: 45%; }
   .popular__prodpricing a {
     display: inline-block;
-    float: right;
     font-size: 36px;
-    margin-left: 20%;
-    padding-right: 25px; }
+    margin-left: 20%; }
   .popular__description {
     width: 100%;
     -webkit-box-pack: center;
