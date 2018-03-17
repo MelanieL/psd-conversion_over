@@ -1377,8 +1377,8 @@ footer .footer__dark {
   footer p {
     font-size: 10px; } }
 
-/* This is where hover states can start to be removed for table users */
-@media (max-width: 805px) {
+/* This is where hover states can start to be removed for tablet users */
+@media (max-width: 840px) {
   .header__leftnav {
     margin-right: 2%; }
   .logoimgdiv {

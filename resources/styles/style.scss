@@ -987,8 +987,8 @@ footer .footer__dark   {
     }
 }
 
-/* This is where hover states can start to be removed for table users */
-@media (max-width: 805px)   {
+/* This is where hover states can start to be removed for tablet users */
+@media (max-width: 840px)   {
     .header__leftnav    {
         margin-right: 2%;
     }
@@ -1040,6 +1040,9 @@ footer .footer__dark   {
     .signup__locationimgdiv {
         width: 15%;
     }
+
+    // This is where the hamburger menu starts
+    // This is where the hamburger menu ends
 }
 
 /* Landscape phone to portrait tablet */
